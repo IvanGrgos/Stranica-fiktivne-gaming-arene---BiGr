@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIGR – Esports &amp; Gaming Arena</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMain"
+                    aria-controls="navbarMain"
+                    aria-expanded="false"
+                    aria-label="Otvori navigaciju">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-BiGr.png" alt="BIGR logo" height="42" class="navbar-logo-img">
+                <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/turniri.html">Turniri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/rang-liste.html">Rang liste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/cijene.html">Cjenik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/oprema.html">Oprema</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/o-nama.html">O nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <div class="navbar-user">
+                    <a href="html/login.html" class="user-icon" aria-label="Korisnički račun">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <section class="hero-section" aria-label="Dobrodošli u BIGR arenu">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-12">
+                    <p class="hero-subtitle">
+                        <em>Tvoja Arena. <span class="text-accent">Tvoja Pravila.</span></em>
+                    </p>
+                    <h1 class="hero-title">
+                        GAMING NA<br>
+                        <span class="text-accent">NAJVIŠOJ</span><br>
+                        RAZINI.
+                    </h1>
+                    <p class="hero-desc">
+                        Rezerviraj vrhunska računala, sudjeluj u turnirima,
+                        popni se na rang listi i postani legenda.
+                    </p>
+                    <div class="hero-buttons d-flex gap-3">
+                        <a href="#rezervacija" class="btn btn-primary-custom">
+                            <i class="bi bi-calendar2-check me-2"></i>Rezerviraj termin
+                        </a>
+                        <a href="html/turniri.html" class="btn btn-outline-custom">
+                            <i class="bi bi-trophy me-2"></i>Pogledaj turnire
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="turniri-section" aria-label="Turniri">
+        <div class="container position-relative">
+
+            <h2 class="section-title">Turniri</h2>
+
+            <h3 class="category-title">Timski</h3>
+            <div class="row justify-content-center g-3 mb-2">
+                <div class="col-auto">
+                    <a href="html/rang-liste.html#lol" class="game-btn" aria-label="League of Legends turnir">
+                        <img src="images/LOL.jpg" alt="LoL" class="game-btn-img">
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="html/rang-liste.html#valo" class="game-btn" aria-label="Valorant turnir">
+                        <img src="images/VALORANT.jpg" alt="Valorant" class="game-btn-img">
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="html/rang-liste.html#cs2" class="game-btn" aria-label="Counter-Strike 2 turnir">
+                        <img src="images/CS2.jpg" alt="CS2" class="game-btn-img">
+                    </a>
+                </div>
+            </div>
+
+            <h3 class="category-title">Pojedinačni</h3>
+            <div class="row justify-content-center g-3">
+                <div class="col-auto">
+                    <a href="html/rang-liste.html#ostalo" class="game-btn" aria-label="FIFA turnir">
+                        <img src="images/FIFA.jpg" alt="Fifa" class="game-btn-img">
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="html/rang-liste.html#rl" class="game-btn" aria-label="Rocket League turnir">
+                        <img src="images/RL.jpg" alt="Rocket" class="game-btn-img">
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="html/rang-liste.html#fort" class="game-btn" aria-label="Fortnite turnir">
+                        <img src="images/FORT.jpg" alt="Fortnite" class="game-btn-img">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="eventi-section" aria-label="Nadolazeći događaji i streamovi">
+        <div class="container">
+
+            <h2 class="section-title">Nadolazeći događaji</h2>
+            <p class="section-subtitle">Vikendom igramo — prijavi se i osvoji nagrade.</p>
+
+            <div class="row g-3 mt-3">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-card">
+                        <div class="event-header">
+                            <span class="event-game-badge event-cs2">CS2</span>
+                            <span class="live-badge"><i class="bi bi-broadcast me-1" aria-hidden="true"></i>LIVE</span>
+                        </div>
+                        <h3 class="event-naziv">CS2 Turnir #12</h3>
+                        <ul class="event-meta">
+                            <li><i class="bi bi-calendar3" aria-hidden="true"></i> 14. lipnja 2026. (subota)</li>
+                            <li><i class="bi bi-people" aria-hidden="true"></i> 16 timova</li>
+                            <li><i class="bi bi-trophy" aria-hidden="true"></i> Nagradni fond: <strong>500 €</strong></li>
+                        </ul>
+                        <a href="html/turniri.html" class="btn btn-primary-custom w-100 mt-auto">Prijavi se</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-card">
+                        <div class="event-header">
+                            <span class="event-game-badge event-valo">VALORANT</span>
+                        </div>
+                        <h3 class="event-naziv">Valorant Cup #8</h3>
+                        <ul class="event-meta">
+                            <li><i class="bi bi-calendar3" aria-hidden="true"></i> 21. lipnja 2026. (subota)</li>
+                            <li><i class="bi bi-people" aria-hidden="true"></i> 8 timova</li>
+                            <li><i class="bi bi-trophy" aria-hidden="true"></i> Nagradni fond: <strong>300 €</strong></li>
+                        </ul>
+                        <a href="html/turniri.html" class="btn btn-primary-custom w-100 mt-auto">Prijavi se</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-card">
+                        <div class="event-header">
+                            <span class="event-game-badge event-lol">LoL</span>
+                        </div>
+                        <h3 class="event-naziv">LoL Arena #5</h3>
+                        <ul class="event-meta">
+                            <li><i class="bi bi-calendar3" aria-hidden="true"></i> 28. lipnja 2026. (subota)</li>
+                            <li><i class="bi bi-people" aria-hidden="true"></i> 8 timova</li>
+                            <li><i class="bi bi-trophy" aria-hidden="true"></i> Nagradni fond: <strong>450 €</strong></li>
+                        </ul>
+                        <a href="html/turniri.html" class="btn btn-primary-custom w-100 mt-auto">Prijavi se</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-card">
+                        <div class="event-header">
+                            <span class="event-game-badge event-fort">FORTNITE</span>
+                        </div>
+                        <h3 class="event-naziv">Fortnite Open #3</h3>
+                        <ul class="event-meta">
+                            <li><i class="bi bi-calendar3" aria-hidden="true"></i> 5. srpnja 2026. (subota)</li>
+                            <li><i class="bi bi-people" aria-hidden="true"></i> 32 igrača</li>
+                            <li><i class="bi bi-trophy" aria-hidden="true"></i> Nagradni fond: <strong>200 €</strong></li>
+                        </ul>
+                        <a href="html/turniri.html" class="btn btn-primary-custom w-100 mt-auto">Prijavi se</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="stream-wrap">
+                <h3 class="stream-naslov"><i class="bi bi-broadcast me-2" aria-hidden="true"></i>PRIJENOSI UŽIVO</h3>
+                <p class="stream-opis">Pratite naše turnire uživo na streaming platformama — svaki vikend od 14:00h.</p>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <a href="#" class="stream-card stream-twitch" target="_blank" rel="noopener noreferrer" aria-label="Pratite nas na Twitchu">
+                            <i class="bi bi-twitch stream-ikona" aria-hidden="true"></i>
+                            <div>
+                                <div class="stream-platforma">Twitch</div>
+                                <div class="stream-kanal">twitch.tv/bigr_arena</div>
+                            </div>
+                            <span class="live-dot" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#" class="stream-card stream-youtube" target="_blank" rel="noopener noreferrer" aria-label="Pratite nas na YouTubeu">
+                            <i class="bi bi-youtube stream-ikona" aria-hidden="true"></i>
+                            <div>
+                                <div class="stream-platforma">YouTube</div>
+                                <div class="stream-kanal">youtube.com/@bigr_arena</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="rezervacija-section" id="rezervacija" aria-label="Rezervacija termina">
+        <div class="container">
+
+            <h2 class="section-title">Rezervacija termina</h2>
+            <p class="section-subtitle">
+                Odaberi datum, vrijeme&nbsp; trajanje te osiguraj svoje mjesto u areni
+            </p>
+
+            <form novalidate id="formRezervacija">
+                <div class="row g-3 justify-content-center">
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <label for="rez-datum" class="form-label">Datum</label>
+                        <div class="input-group">
+                            <input
+                                type="date"
+                                class="form-control"
+                                id="rez-datum"
+                                aria-label="Odaberi datum"
+                            >
+                            <span class="input-group-text" aria-hidden="true">
+                                <i class="bi bi-calendar3"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <label for="rez-vrijeme" class="form-label">Vrijeme početka</label>
+                        <div class="input-group">
+                            <input
+                                type="time"
+                                class="form-control"
+                                id="rez-vrijeme"
+                                aria-label="Odaberi vrijeme"
+                            >
+                            <span class="input-group-text" aria-hidden="true">
+                                <i class="bi bi-clock"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <label for="rez-trajanje" class="form-label">Trajanje</label>
+                        <select class="form-select" id="rez-trajanje" aria-label="Odaberite trajanje">
+                            <option value="" disabled selected>Odaberite trajanje</option>
+                            <option value="1">1 sat</option>
+                            <option value="2">2 sata</option>
+                            <option value="3">3 sata</option>
+                            <option value="4">4 sata</option>
+                            <option value="5">5 sati</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <label for="rez-igraci" class="form-label">Broj igrača</label>
+                        <select class="form-select" id="rez-igraci" aria-label="Odaberite broj igrača">
+                            <option value="" disabled selected>Odaberite broj igrača</option>
+                            <option value="1">1 igrač</option>
+                            <option value="2">2 igrača</option>
+                            <option value="3">3 igrača</option>
+                            <option value="4">4 igrača</option>
+                            <option value="5">5 igrača</option>
+                            <option value="6">6+ igrača</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="html/rezervacija.html" id="btnRezervacija" class="btn btn-primary-custom px-5">
+                        <i class="bi bi-calendar2-check me-2"></i>Rezerviraj termin
+                    </a>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row py-5">
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="index.html" class="footer-brand mb-3">
+                        <img src="images/logo-BiGr.png" alt="BIGR logo" height="40" class="navbar-logo-img">
+                        <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+                    </a>
+                    <p class="footer-desc">
+                        Moderna eSports i gaming arena stvorena za sve gamere.
+                        Mjesto strasti, zajedništva i pobjede.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-x" aria-label="X" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-twitch" aria-label="Twitch" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitch" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-youtube" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0 offset-lg-1">
+                    <p class="footer-title">LINKOVI</p>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="html/turniri.html">Turniri</a></li>
+                        <li><a href="html/rang-liste.html">Rang liste</a></li>
+                        <li><a href="html/cijene.html">Cjenik</a></li>
+                        <li><a href="html/oprema.html">Oprema</a></li>
+                        <li><a href="html/o-nama.html">O nama</a></li>
+                        <li><a href="html/kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <p class="footer-title">INFO</p>
+                    <ul class="footer-links">
+                        <li><a href="html/faq.html#pravila">Pravila ponašanja</a></li>
+                        <li><a href="html/faq.html#uvjeti">Uvjeti korištenja</a></li>
+                        <li><a href="html/faq.html#privatnost">Politika privatnosti</a></li>
+                        <li><a href="html/faq.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <p class="footer-title"><a href="html/kontakt.html">KONTAKT</a></p>
+                    <ul class="footer-contact">
+                        <li>
+                            <a href="html/kontakt.html">
+                                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                                <span>Ulica Gamera 1, 10000 Zagreb, Hrvatska</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="html/kontakt.html">
+                                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                                <span>+385 12 345 678</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="html/kontakt.html">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                <span>info@bigr.arena.hr</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="html/kontakt.html">
+                                <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                                <span>Pon – Ned 09:00 – 24:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; 2026 BIGR Arena. Sva prava pridržana.</p>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    (function () {
+        var btn = document.getElementById('btnRezervacija');
+        if (!btn) return;
+
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            var datum    = document.getElementById('rez-datum').value;
+            var vrijeme  = document.getElementById('rez-vrijeme').value;
+            var trajanje = document.getElementById('rez-trajanje').value;
+            var igraci   = document.getElementById('rez-igraci').value;
+
+            var params = new URLSearchParams();
+            if (datum)    params.set('datum', datum);
+            if (vrijeme)  params.set('vrijeme', vrijeme);
+            if (trajanje) params.set('trajanje', trajanje);
+            if (igraci)   params.set('igraci', igraci);
+
+            var qs = params.toString();
+            window.location.href = 'html/rezervacija.html' + (qs ? '?' + qs : '');
+        });
+    })();
+    </script>
+</body>
+</html>
