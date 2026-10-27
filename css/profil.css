@@ -1,0 +1,754 @@
+
+
+.profil-page {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+
+.profil-hero-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.profil-avatar-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.profil-avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-green);
+    box-shadow: 0 0 24px rgba(61, 255, 110, 0.35), 0 0 60px rgba(61, 255, 110, 0.12);
+    background: linear-gradient(135deg, #0d2230 0%, #091820 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.8rem;
+    color: rgba(61, 255, 110, 0.65);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profil-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profil-status-dot {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--accent-green);
+    border: 2px solid var(--bg-card);
+    box-shadow: 0 0 8px rgba(61, 255, 110, 0.8);
+}
+
+
+.profil-ime {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 900;
+    color: var(--text-white);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.profil-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.profil-field-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.profil-field-label {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.profil-field-row > div,
+.profil-field-row > span:last-child {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.profil-gametag {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent-green);
+}
+
+.profil-age {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.profil-copy-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 2px 5px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    line-height: 1;
+}
+
+.profil-copy-btn:hover {
+    color: var(--accent-green);
+    background-color: rgba(61, 255, 110, 0.1);
+}
+
+
+.profil-quick-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    border-left: 1px solid var(--border-subtle);
+    padding-left: 2rem;
+    min-width: 260px;
+}
+
+.profil-qs-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.profil-qs-icon {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    width: 18px;
+    flex-shrink: 0;
+}
+
+.profil-qs-label {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    flex: 1;
+}
+
+.profil-qs-val {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-white);
+    text-align: right;
+}
+
+.profil-qs-val.accent {
+    color: var(--accent-green);
+    font-size: 1.05rem;
+}
+
+
+.profil-sidebar {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    overflow: hidden;
+    position: sticky;
+    top: calc(var(--navbar-height) + 1rem);
+}
+
+.profil-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    background: none;
+    border: none;
+    border-left: 3px solid transparent;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.profil-nav-btn:hover {
+    color: var(--text-light);
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.profil-nav-btn.active {
+    color: var(--accent-green);
+    background-color: rgba(61, 255, 110, 0.07);
+    border-left-color: var(--accent-green);
+}
+
+.profil-nav-btn i {
+    font-size: 1.05rem;
+    width: 18px;
+    flex-shrink: 0;
+}
+
+
+.profil-card-inner {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 1.75rem;
+    height: 100%;
+}
+
+.profil-card-naslov {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 1px;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+
+.omiljene-igra {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+.omiljene-igra-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.omiljene-igra-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 0.75rem 0.75rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+.aktivnost-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.aktivnost-item {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.aktivnost-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.aktivnost-item:first-child {
+    padding-top: 0;
+}
+
+.aktivnost-ikona {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+.aktivnost-turnir {
+    background-color: rgba(61, 255, 110, 0.12);
+    color: var(--accent-green);
+}
+
+.aktivnost-pobjeda {
+    background-color: rgba(61, 255, 110, 0.12);
+    color: var(--accent-green);
+}
+
+.aktivnost-utakmica {
+    background-color: rgba(176, 188, 212, 0.1);
+    color: var(--text-muted);
+}
+
+.aktivnost-poraz {
+    background-color: rgba(255, 80, 80, 0.1);
+    color: #ff6060;
+}
+
+.aktivnost-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.aktivnost-naziv {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.aktivnost-detalj {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.aktivnost-kad {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+.stat-mini-card {
+    background-color: var(--bg-section);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+
+.stat-mini-label {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.stat-mini-val {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--accent-green);
+    line-height: 1;
+}
+
+.stat-mini-icon {
+    position: absolute;
+    right: 0.85rem;
+    bottom: 0.65rem;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+}
+
+
+.profil-tablica {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.profil-tablica thead th {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+    background-color: var(--bg-section);
+    white-space: nowrap;
+}
+
+.profil-tablica thead th:first-child { border-radius: 8px 0 0 0; }
+.profil-tablica thead th:last-child  { border-radius: 0 8px 0 0; }
+
+.profil-tablica tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+
+.profil-tablica tbody td {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-light);
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+    vertical-align: middle;
+}
+
+.profil-tablica tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.profil-tablica tbody td:first-child {
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+.badge-mjesto {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+.badge-prvo  { background-color: rgba(255, 215, 0, 0.15); color: #ffd700; border: 1px solid rgba(255, 215, 0, 0.3); }
+.badge-drugo { background-color: rgba(192, 192, 192, 0.15); color: #c0c0c0; border: 1px solid rgba(192,192,192,0.3); }
+.badge-trece { background-color: rgba(205, 127, 50, 0.15); color: #cd7f32; border: 1px solid rgba(205,127,50,0.3); }
+.badge-ostalo { background-color: rgba(107, 122, 153, 0.15); color: var(--text-muted); border: 1px solid var(--border-subtle); }
+
+.igra-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+
+.utakmica-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    background-color: var(--bg-section);
+    margin-bottom: 0.6rem;
+    transition: border-color 0.2s ease;
+}
+
+
+.utakmica-ishod {
+    width: 60px;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.utakmica-ishod.pobjeda {
+    background-color: rgba(61, 255, 110, 0.15);
+    color: var(--accent-green);
+    border: 1px solid rgba(61, 255, 110, 0.3);
+}
+
+.utakmica-ishod.poraz {
+    background-color: rgba(255, 80, 80, 0.12);
+    color: #ff6060;
+    border: 1px solid rgba(255, 80, 80, 0.25);
+}
+
+.utakmica-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.utakmica-protivnik {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-white);
+}
+
+.utakmica-meta {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.utakmica-rezultat {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-light);
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.utakmica-datum {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-align: right;
+    flex-shrink: 0;
+    min-width: 85px;
+}
+
+
+.stat-igra-card {
+    background-color: var(--bg-section);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat-igra-header {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 1.25rem;
+}
+
+.stat-igra-naslov {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.stat-igra-mini {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.stat-igra-mini-item {
+    text-align: center;
+}
+
+.stat-igra-mini-val {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--accent-green);
+    line-height: 1;
+}
+
+.stat-igra-mini-label {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.stat-progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+}
+
+.stat-progress-label span:last-child {
+    color: var(--accent-green);
+    font-weight: 700;
+}
+
+.stat-progress-bar-wrap {
+    height: 6px;
+    background-color: var(--border-subtle);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.stat-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-green-dark), var(--accent-green));
+    border-radius: 3px;
+    transition: width 0.6s ease;
+}
+
+
+.postavke-section-naslov {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.profil-avatar-upload {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.profil-avatar-upload .profil-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 2.2rem;
+}
+
+.profil-avatar-upload .profil-status-dot {
+    bottom: 2px;
+    right: 2px;
+    width: 14px;
+    height: 14px;
+}
+
+.btn-avatar-upload {
+    background-color: transparent;
+    color: var(--text-light);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 0.5rem 1.1rem;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-avatar-upload:hover {
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+}
+
+
+.postavke-control {
+    background-color: var(--bg-section) !important;
+    border-color: var(--border-subtle) !important;
+    color: var(--text-white) !important;
+    font-family: var(--font-body);
+}
+
+.postavke-control::placeholder {
+    color: var(--text-muted) !important;
+}
+
+.postavke-control:focus {
+    border-color: var(--accent-green) !important;
+    box-shadow: 0 0 0 0.2rem rgba(61, 255, 110, 0.2) !important;
+    background-color: var(--bg-section) !important;
+    color: var(--text-white) !important;
+}
+
+.postavke-label {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-light);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+
+
+@media (max-width: 991.98px) {
+    .profil-hero-card {
+        padding: 1.5rem;
+    }
+
+    .profil-quick-stats {
+        border-left: none;
+        border-top: 1px solid var(--border-subtle);
+        padding-left: 0;
+        padding-top: 1.25rem;
+        min-width: unset;
+        width: 100%;
+    }
+
+    .profil-sidebar {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        border-radius: 10px;
+        padding: 0.25rem;
+        gap: 0.25rem;
+        scrollbar-width: none;
+    }
+
+    .profil-sidebar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .profil-nav-btn {
+        border-left: none;
+        border-bottom: 3px solid transparent;
+        padding: 0.65rem 1rem;
+        white-space: nowrap;
+        flex: 0 0 auto;
+        justify-content: center;
+        border-radius: 8px;
+    }
+
+    .profil-nav-btn.active {
+        border-bottom-color: var(--accent-green);
+        background-color: rgba(61, 255, 110, 0.07);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .profil-hero-card {
+        padding: 1.25rem;
+    }
+
+    .profil-avatar {
+        width: 100px;
+        height: 100px;
+        font-size: 3rem;
+    }
+
+    .stat-mini-val {
+        font-size: 1.6rem;
+    }
+}

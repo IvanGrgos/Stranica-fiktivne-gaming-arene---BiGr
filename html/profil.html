@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil – BIGR Esports &amp; Gaming Arena</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/profil.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Otvori navigaciju">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo-BiGr.png" alt="BIGR logo" height="42" class="navbar-logo-img">
+                <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Početna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="turniri.html">Turniri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rang-liste.html">Rang liste</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cijene.html">Cjenik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="oprema.html">Oprema</a></li>
+                    <li class="nav-item"><a class="nav-link" href="o-nama.html">O nama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <div class="navbar-user">
+                    <a href="profil.html" class="user-icon active" aria-label="Moj profil" title="Moj profil">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="profil-page">
+        <div class="container">
+
+
+            <div class="profil-hero-card">
+                <div class="row align-items-center gy-4">
+
+
+                    <div class="col-auto mx-auto mx-lg-0">
+                        <div class="profil-avatar-wrap">
+                            <div class="profil-avatar" role="img" aria-label="Profilna slika">
+                                <i class="bi bi-person-fill" aria-hidden="true"></i>
+                            </div>
+                            <span class="profil-status-dot" role="status" title="Online" aria-label="Online"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-lg">
+                        <h1 class="profil-ime">Marko Kovačević</h1>
+                        <div class="profil-fields">
+                            <div class="profil-field-row">
+                                <span class="profil-field-label">Game Tag</span>
+                                <span class="profil-gametag">MarkoFPS</span>
+                            </div>
+                            <div class="profil-field-row">
+                                <span class="profil-field-label">Email</span>
+                                <span>marko.kovacevic@email.com</span>
+                            </div>
+                            <div class="profil-field-row">
+                                <span class="profil-field-label">Datum rođenja</span>
+                                <span>12 / 05 / 2002 <span class="profil-age">(24 godine)</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-lg-auto">
+                        <div class="profil-quick-stats">
+                            <div class="profil-qs-item">
+                                <i class="bi bi-calendar3 profil-qs-icon" aria-hidden="true"></i>
+                                <span class="profil-qs-label">Član od</span>
+                                <span class="profil-qs-val">15.03.2026.</span>
+                            </div>
+                            <div class="profil-qs-item">
+                                <i class="bi bi-trophy profil-qs-icon" aria-hidden="true"></i>
+                                <span class="profil-qs-label">Ukupno turnira</span>
+                                <span class="profil-qs-val accent">12</span>
+                            </div>
+                            <div class="profil-qs-item">
+                                <i class="bi bi-controller profil-qs-icon" aria-hidden="true"></i>
+                                <span class="profil-qs-label">Odigrane utakmice</span>
+                                <span class="profil-qs-val accent">48</span>
+                            </div>
+                            <div class="profil-qs-item">
+                                <i class="bi bi-bullseye profil-qs-icon" aria-hidden="true"></i>
+                                <span class="profil-qs-label">Postotak pobjeda</span>
+                                <span class="profil-qs-val accent">62%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-3">
+                    <div class="profil-sidebar" role="tablist" aria-label="Profil navigacija">
+                        <button class="profil-nav-btn active" type="button" role="tab" data-bs-toggle="tab" data-bs-target="#panel-pregled" id="tab-pregled" aria-selected="true" aria-controls="panel-pregled">
+                            <i class="bi bi-house-fill" aria-hidden="true"></i>
+                            <span>Pregled</span>
+                        </button>
+                        <button class="profil-nav-btn" type="button" role="tab" data-bs-toggle="tab" data-bs-target="#panel-turniri" id="tab-turniri" aria-selected="false" aria-controls="panel-turniri">
+                            <i class="bi bi-trophy" aria-hidden="true"></i>
+                            <span>Moji turniri</span>
+                        </button>
+                        <button class="profil-nav-btn" type="button" role="tab" data-bs-toggle="tab" data-bs-target="#panel-statistika" id="tab-statistika" aria-selected="false" aria-controls="panel-statistika">
+                            <i class="bi bi-bar-chart-line" aria-hidden="true"></i>
+                            <span>Statistika</span>
+                        </button>
+                        <button class="profil-nav-btn" type="button" role="tab" data-bs-toggle="tab" data-bs-target="#panel-postavke" id="tab-postavke" aria-selected="false" aria-controls="panel-postavke">
+                            <i class="bi bi-gear" aria-hidden="true"></i>
+                            <span>Postavke</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="tab-content col-lg-9">
+
+
+
+                    <div class="profil-panel tab-pane fade show active" id="panel-pregled" role="tabpanel" aria-labelledby="tab-pregled">
+                        <div class="row g-4 mb-4">
+
+
+                            <div class="col-md-7">
+                                <div class="profil-card-inner">
+                                    <h2 class="profil-card-naslov">Omiljene igre</h2>
+                                    <div class="row g-2">
+                                        <div class="col-4">
+                                            <div class="omiljene-igra">
+                                                <img src="../images/CS2.jpg" alt="Counter-Strike 2" class="omiljene-igra-img">
+                                                <div class="omiljene-igra-name">CS2</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="omiljene-igra">
+                                                <img src="../images/VALORANT.jpg" alt="VALORANT" class="omiljene-igra-img">
+                                                <div class="omiljene-igra-name">VALORANT</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="omiljene-igra">
+                                                <img src="../images/LOL.jpg" alt="League of Legends" class="omiljene-igra-img">
+                                                <div class="omiljene-igra-name">LEAGUE OF LEGENDS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-5">
+                                <div class="profil-card-inner">
+                                    <h2 class="profil-card-naslov">Nedavna aktivnost</h2>
+                                    <div class="aktivnost-lista">
+                                        <div class="aktivnost-item">
+                                            <div class="aktivnost-ikona aktivnost-turnir" aria-hidden="true">
+                                                <i class="bi bi-trophy-fill"></i>
+                                            </div>
+                                            <div class="aktivnost-info">
+                                                <div class="aktivnost-naziv">Sudjelovao na turniru</div>
+                                                <div class="aktivnost-detalj">WNG League #5</div>
+                                            </div>
+                                            <div class="aktivnost-kad">prije 2 dana</div>
+                                        </div>
+                                        <div class="aktivnost-item">
+                                            <div class="aktivnost-ikona aktivnost-pobjeda" aria-hidden="true">
+                                                <i class="bi bi-shield-check"></i>
+                                            </div>
+                                            <div class="aktivnost-info">
+                                                <div class="aktivnost-naziv">Pobjeda na utakmici</div>
+                                                <div class="aktivnost-detalj">vs Team Alpha</div>
+                                            </div>
+                                            <div class="aktivnost-kad">prije 3 dana</div>
+                                        </div>
+                                        <div class="aktivnost-item">
+                                            <div class="aktivnost-ikona aktivnost-utakmica" aria-hidden="true">
+                                                <i class="bi bi-controller"></i>
+                                            </div>
+                                            <div class="aktivnost-info">
+                                                <div class="aktivnost-naziv">Odigrana utakmica</div>
+                                                <div class="aktivnost-detalj">vs Quantum Force</div>
+                                            </div>
+                                            <div class="aktivnost-kad">prije 5 dana</div>
+                                        </div>
+                                        <div class="aktivnost-item">
+                                            <div class="aktivnost-ikona aktivnost-turnir" aria-hidden="true">
+                                                <i class="bi bi-trophy-fill"></i>
+                                            </div>
+                                            <div class="aktivnost-info">
+                                                <div class="aktivnost-naziv">Registracija za turnir</div>
+                                                <div class="aktivnost-detalj">BIGR Open #4</div>
+                                            </div>
+                                            <div class="aktivnost-kad">prije 1 tjedna</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="profil-card-inner">
+                            <h2 class="profil-card-naslov">Statistika</h2>
+                            <div class="row g-3">
+                                <div class="col">
+                                    <div class="stat-mini-card">
+                                        <div class="stat-mini-label">Ukupno turnira</div>
+                                        <div class="stat-mini-val">12</div>
+                                        <i class="bi bi-trophy stat-mini-icon" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="stat-mini-card">
+                                        <div class="stat-mini-label">Prvo mjesto</div>
+                                        <div class="stat-mini-val">3</div>
+                                        <i class="bi bi-award stat-mini-icon" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="stat-mini-card">
+                                        <div class="stat-mini-label">Drugo mjesto</div>
+                                        <div class="stat-mini-val">5</div>
+                                        <i class="bi bi-award stat-mini-icon" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="stat-mini-card">
+                                        <div class="stat-mini-label">Treće mjesto</div>
+                                        <div class="stat-mini-val">4</div>
+                                        <i class="bi bi-award stat-mini-icon" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="stat-mini-card">
+                                        <div class="stat-mini-label">Postotak pobjeda</div>
+                                        <div class="stat-mini-val">62%</div>
+                                        <i class="bi bi-bullseye stat-mini-icon" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="profil-panel tab-pane fade" id="panel-turniri" role="tabpanel" aria-labelledby="tab-turniri">
+                        <div class="profil-card-inner">
+                            <h2 class="profil-card-naslov">Moji turniri</h2>
+                            <div class="table-responsive">
+                                <table class="profil-tablica" aria-label="Popis mojih turnira">
+                                    <thead>
+                                        <tr>
+                                            <th>Turnir</th>
+                                            <th>Igra</th>
+                                            <th>Datum</th>
+                                            <th>Sudionici</th>
+                                            <th>Moje mjesto</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>WNG League #5</td>
+                                            <td><span class="igra-badge"><i class="bi bi-controller" aria-hidden="true"></i> CS2</span></td>
+                                            <td>05.06.2026.</td>
+                                            <td>32</td>
+                                            <td><span class="badge-mjesto badge-prvo">1. mjesto</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>BIGR Open #3</td>
+                                            <td><span class="igra-badge"><i class="bi bi-controller" aria-hidden="true"></i> Valorant</span></td>
+                                            <td>01.06.2026.</td>
+                                            <td>16</td>
+                                            <td><span class="badge-mjesto badge-drugo">2. mjesto</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>CS2 Cup #8</td>
+                                            <td><span class="igra-badge"><i class="bi bi-controller" aria-hidden="true"></i> CS2</span></td>
+                                            <td>20.05.2026.</td>
+                                            <td>64</td>
+                                            <td><span class="badge-mjesto badge-trece">3. mjesto</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Valorant Clash</td>
+                                            <td><span class="igra-badge"><i class="bi bi-controller" aria-hidden="true"></i> Valorant</span></td>
+                                            <td>10.05.2026.</td>
+                                            <td>24</td>
+                                            <td><span class="badge-mjesto badge-ostalo">5. mjesto</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>LoL Summer Cup</td>
+                                            <td><span class="igra-badge"><i class="bi bi-controller" aria-hidden="true"></i> LoL</span></td>
+                                            <td>01.05.2026.</td>
+                                            <td>8</td>
+                                            <td><span class="badge-mjesto badge-prvo">1. mjesto</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>CS2 Masters</td>
+                                            <td><span class="igra-badge"><i class="bi bi-controller" aria-hidden="true"></i> CS2</span></td>
+                                            <td>15.04.2026.</td>
+                                            <td>32</td>
+                                            <td><span class="badge-mjesto badge-drugo">2. mjesto</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Valorant Pro League</td>
+                                            <td><span class="igra-badge"><i class="bi bi-controller" aria-hidden="true"></i> Valorant</span></td>
+                                            <td>01.04.2026.</td>
+                                            <td>16</td>
+                                            <td><span class="badge-mjesto badge-trece">3. mjesto</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="profil-panel tab-pane fade" id="panel-statistika" role="tabpanel" aria-labelledby="tab-statistika">
+
+
+                        <div class="profil-card-inner mb-4">
+                            <h2 class="profil-card-naslov">Ukupni pregled</h2>
+                            <div class="row g-3 mb-4">
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-mini-card">
+                                        <div class="stat-mini-label">Ukupno utakmica</div>
+                                        <div class="stat-mini-val">48</div>
+                                        <i class="bi bi-controller stat-mini-icon" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-mini-card">
+                                        <div class="stat-mini-label">Pobjede</div>
+                                        <div class="stat-mini-val">30</div>
+                                        <i class="bi bi-shield-check stat-mini-icon" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-mini-card">
+                                        <div class="stat-mini-label">Porazi</div>
+                                        <div class="stat-mini-val" style="color: #ff6060;">18</div>
+                                        <i class="bi bi-shield-x stat-mini-icon" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-mini-card">
+                                        <div class="stat-mini-label">Win rate</div>
+                                        <div class="stat-mini-val">62%</div>
+                                        <i class="bi bi-bullseye stat-mini-icon" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stat-progress-label">
+                                <span>Pobjede</span>
+                                <span>62%</span>
+                            </div>
+                            <div class="stat-progress-bar-wrap">
+                                <div class="stat-progress-bar" style="width: 62%"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="profil-card-inner">
+                            <h2 class="profil-card-naslov">Statistika po igri</h2>
+
+
+                            <div class="stat-igra-card">
+                                <div class="stat-igra-header">
+                                    <i class="bi bi-controller text-accent" aria-hidden="true"></i>
+                                    <h3 class="stat-igra-naslov">Counter-Strike 2</h3>
+                                </div>
+                                <div class="stat-igra-mini">
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">28</div>
+                                        <div class="stat-igra-mini-label">Utakmica</div>
+                                    </div>
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">19</div>
+                                        <div class="stat-igra-mini-label">Pobjeda</div>
+                                    </div>
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">9</div>
+                                        <div class="stat-igra-mini-label">Poraza</div>
+                                    </div>
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">7</div>
+                                        <div class="stat-igra-mini-label">Turnira</div>
+                                    </div>
+                                </div>
+                                <div class="stat-progress-label">
+                                    <span>Win rate</span>
+                                    <span>68%</span>
+                                </div>
+                                <div class="stat-progress-bar-wrap">
+                                    <div class="stat-progress-bar" style="width: 68%"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="stat-igra-card">
+                                <div class="stat-igra-header">
+                                    <i class="bi bi-controller text-accent" aria-hidden="true"></i>
+                                    <h3 class="stat-igra-naslov">Valorant</h3>
+                                </div>
+                                <div class="stat-igra-mini">
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">12</div>
+                                        <div class="stat-igra-mini-label">Utakmica</div>
+                                    </div>
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">7</div>
+                                        <div class="stat-igra-mini-label">Pobjeda</div>
+                                    </div>
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">5</div>
+                                        <div class="stat-igra-mini-label">Poraza</div>
+                                    </div>
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">3</div>
+                                        <div class="stat-igra-mini-label">Turnira</div>
+                                    </div>
+                                </div>
+                                <div class="stat-progress-label">
+                                    <span>Win rate</span>
+                                    <span>58%</span>
+                                </div>
+                                <div class="stat-progress-bar-wrap">
+                                    <div class="stat-progress-bar" style="width: 58%"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="stat-igra-card">
+                                <div class="stat-igra-header">
+                                    <i class="bi bi-controller text-accent" aria-hidden="true"></i>
+                                    <h3 class="stat-igra-naslov">League of Legends</h3>
+                                </div>
+                                <div class="stat-igra-mini">
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">8</div>
+                                        <div class="stat-igra-mini-label">Utakmica</div>
+                                    </div>
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">4</div>
+                                        <div class="stat-igra-mini-label">Pobjeda</div>
+                                    </div>
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">4</div>
+                                        <div class="stat-igra-mini-label">Poraza</div>
+                                    </div>
+                                    <div class="stat-igra-mini-item">
+                                        <div class="stat-igra-mini-val">2</div>
+                                        <div class="stat-igra-mini-label">Turnira</div>
+                                    </div>
+                                </div>
+                                <div class="stat-progress-label">
+                                    <span>Win rate</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="stat-progress-bar-wrap">
+                                    <div class="stat-progress-bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="profil-panel tab-pane fade" id="panel-postavke" role="tabpanel" aria-labelledby="tab-postavke">
+
+
+                        <div class="profil-card-inner mb-4">
+                            <h2 class="profil-card-naslov">Postavke profila</h2>
+
+                            <div class="profil-avatar-upload">
+                                <div class="profil-avatar-wrap">
+                                    <div class="profil-avatar" aria-hidden="true">
+                                        <i class="bi bi-person-fill"></i>
+                                    </div>
+                                    <div class="profil-status-dot"></div>
+                                </div>
+                                <div>
+                                    <button class="btn-avatar-upload mb-1">
+                                        <i class="bi bi-upload me-2" aria-hidden="true"></i>Promijeni sliku
+                                    </button>
+                                    <div style="font-size:0.75rem; color:var(--text-muted);">JPG, PNG — max 2MB</div>
+                                </div>
+                            </div>
+
+                            <form id="postavkeForma" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="p-ime" class="postavke-label">Ime</label>
+                                        <input type="text" class="form-control postavke-control" id="p-ime" value="Marko">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="p-prezime" class="postavke-label">Prezime</label>
+                                        <input type="text" class="form-control postavke-control" id="p-prezime" value="Kovačević">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="p-gametag" class="postavke-label">Game Tag</label>
+                                        <input type="text" class="form-control postavke-control" id="p-gametag" value="MarkoFPS">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="p-email" class="postavke-label">E-mail</label>
+                                        <input type="email" class="form-control postavke-control" id="p-email" value="marko.kovacevic@email.com">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="p-rodjendan" class="postavke-label">Datum rođenja</label>
+                                        <input type="date" class="form-control postavke-control" id="p-rodjendan" value="2002-05-12">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="p-igra" class="postavke-label">Omiljena igra</label>
+                                        <select class="form-select postavke-control" id="p-igra">
+                                            <option value="cs2" selected>Counter-Strike 2</option>
+                                            <option value="valorant">Valorant</option>
+                                            <option value="lol">League of Legends</option>
+                                            <option value="fortnite">Fortnite</option>
+                                            <option value="fifa">FIFA</option>
+                                            <option value="rl">Rocket League</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <button type="submit" class="btn btn-primary-custom">
+                                            <i class="bi bi-check2 me-2" aria-hidden="true"></i>Spremi promjene
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <div class="profil-card-inner">
+                            <h2 class="profil-card-naslov">Promjena lozinke</h2>
+                            <form id="lozinkaForma" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="p-stara-lozinka" class="postavke-label">Trenutna lozinka</label>
+                                        <input type="password" class="form-control postavke-control" id="p-stara-lozinka" placeholder="••••••••">
+                                    </div>
+                                    <div class="col-12"></div>
+                                    <div class="col-md-6">
+                                        <label for="p-nova-lozinka" class="postavke-label">Nova lozinka</label>
+                                        <input type="password" class="form-control postavke-control" id="p-nova-lozinka" placeholder="••••••••">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="p-potvrdi-lozinka" class="postavke-label">Potvrdi novu lozinku</label>
+                                        <input type="password" class="form-control postavke-control" id="p-potvrdi-lozinka" placeholder="••••••••">
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <button type="submit" class="btn btn-outline-custom">
+                                            <i class="bi bi-shield-lock me-2" aria-hidden="true"></i>Promijeni lozinku
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="../index.html" class="footer-brand mb-3">
+                        <img src="../images/logo-BiGr.png" alt="BIGR logo" height="40" class="navbar-logo-img">
+                        <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+                    </a>
+                    <p class="footer-desc">Moderna eSports i gaming arena stvorena za sve gamere. Mjesto strasti, zajedništva i pobjede.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-x" aria-label="X" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-twitch" aria-label="Twitch" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitch" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-youtube" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0 offset-lg-1">
+                    <p class="footer-title">LINKOVI</p>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Početna</a></li>
+                        <li><a href="turniri.html">Turniri</a></li>
+                        <li><a href="rang-liste.html">Rang liste</a></li>
+                        <li><a href="cijene.html">Cjenik</a></li>
+                        <li><a href="oprema.html">Oprema</a></li>
+                        <li><a href="o-nama.html">O nama</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <p class="footer-title">INFO</p>
+                    <ul class="footer-links">
+                        <li><a href="faq.html#pravila">Pravila ponašanja</a></li>
+                        <li><a href="faq.html#uvjeti">Uvjeti korištenja</a></li>
+                        <li><a href="faq.html#privatnost">Politika privatnosti</a></li>
+                        <li><a href="faq.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <p class="footer-title"><a href="kontakt.html">KONTAKT</a></p>
+                    <ul class="footer-contact">
+                        <li><a href="kontakt.html"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i><span>Ulica Gamera 1, 10000 Zagreb, Hrvatska</span></a></li>
+                        <li><a href="kontakt.html"><i class="bi bi-telephone-fill" aria-hidden="true"></i><span>+385 12 345 678</span></a></li>
+                        <li><a href="kontakt.html"><i class="bi bi-envelope-fill" aria-hidden="true"></i><span>info@bigr.arena.hr</span></a></li>
+                        <li><a href="kontakt.html"><i class="bi bi-clock-fill" aria-hidden="true"></i><span>Pon – Ned 09:00 – 24:00</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; 2026 BIGR Arena. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

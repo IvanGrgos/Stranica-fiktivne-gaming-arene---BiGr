@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Turnir #12 – BIGR Esports &amp; Gaming Arena</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/global.css">
+    
+    <link rel="stylesheet" href="../css/detalji.css">
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMain"
+                    aria-controls="navbarMain"
+                    aria-expanded="false"
+                    aria-label="Otvori navigaciju">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo-BiGr.png" alt="BIGR logo" height="42" class="navbar-logo-img">
+                <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="turniri.html">Turniri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rang-liste.html">Rang liste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cijene.html">Cjenik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oprema.html">Oprema</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-nama.html">O nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <div class="navbar-user">
+                    <a href="login.html" class="user-icon" aria-label="Korisnički račun">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    
+
+
+    
+    <main class="detalji-main">
+        <div class="container">
+
+            
+            <nav aria-label="breadcrumb" class="detalji-breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="../index.html"><i class="bi bi-house me-1"></i>Početna</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="./turniri.html">Turniri</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">CS2 Turnir #12</li>
+                </ol>
+            </nav>
+            
+
+
+            
+            <div class="row g-5 mb-5">
+
+                
+                <div class="col-md-6">
+                    <img src="../images/CS2.jpg"
+                         alt="CS2 Turnir #12"
+                         class="detalji-slika">
+                </div>
+
+                
+                <div class="col-md-6 detalji-info">
+                    <span class="badge detalji-badge mb-3">FPS</span>
+                    <h1 class="detalji-naslov">CS2 Turnir #12</h1>
+
+                    <div class="detalji-meta">
+                        <span><i class="bi bi-calendar3"></i> 15. siječnja 2026.</span>
+                        <span><i class="bi bi-geo-alt"></i> BIGR Arena, Zagreb</span>
+                        <span><i class="bi bi-people"></i> 16 timova</span>
+                        <span><i class="bi bi-trophy"></i> Nagradni fond: 500€</span>
+                    </div>
+
+                    <div class="detalji-cijena">
+                        <span class="cijena-label">Kotizacija</span>
+                        <span class="cijena-iznos">Besplatno</span>
+                    </div>
+
+                    <hr class="detalji-divider">
+
+                    <p class="detalji-opis-kratki">
+                        Najveći CS2 turnir u regiji dolazi u BIGR Arenu! Prijavi svoj tim i
+                        bori se za prestiž, nagrade i mjesto na rang listi. Format je
+                        eliminacijski s 16 timova — samo jedan može biti pobjednik.
+                    </p>
+
+                    <a href="turniri.html?turnir=cs2-12" class="btn btn-primary-custom mt-2">
+                        <i class="bi bi-controller me-2"></i>Prijavi se na turnir
+                    </a>
+                </div>
+
+            </div>
+            
+
+
+            
+            <div class="detalji-tabs-wrapper">
+
+                <ul class="nav nav-tabs detalji-nav-tabs" id="detaljiTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active"
+                                id="tab-opis"
+                                data-bs-toggle="tab"
+                                data-bs-target="#paneOpis"
+                                type="button"
+                                role="tab"
+                                aria-controls="paneOpis"
+                                aria-selected="true">
+                            <i class="bi bi-file-text me-2"></i>Opis
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link"
+                                id="tab-program"
+                                data-bs-toggle="tab"
+                                data-bs-target="#paneProgram"
+                                type="button"
+                                role="tab"
+                                aria-controls="paneProgram"
+                                aria-selected="false">
+                            <i class="bi bi-calendar2-week me-2"></i>Program
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link"
+                                id="tab-video"
+                                data-bs-toggle="tab"
+                                data-bs-target="#paneVideo"
+                                type="button"
+                                role="tab"
+                                aria-controls="paneVideo"
+                                aria-selected="false">
+                            <i class="bi bi-play-circle me-2"></i>Video
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content detalji-tab-content" id="detaljiTabsContent">
+
+                    
+                    <div class="tab-pane fade show active"
+                         id="paneOpis"
+                         role="tabpanel"
+                         aria-labelledby="tab-opis">
+
+                        <h2 class="tab-section-title">O turniru</h2>
+                        <p>
+                            CS2 Turnir #12 je prestižno natjecanje koje okuplja najbolje timove
+                            iz cijele Hrvatske. Turnir se odvija u eliminacijskom formatu gdje
+                            svaki poraz znači ispadanje — nema mjesta za greške.
+                        </p>
+                        <p>
+                            Svi mečevi igraju se na najnovijem hardveru u BIGR Areni s
+                            profesionalnim sudačkim timom koji osigurava fair play. Svaki meč
+                            se snima i objavljuje na našem YouTube kanalu.
+                        </p>
+
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-6">
+                                <div class="info-box">
+                                    <h3 class="info-box-title"><i class="bi bi-trophy me-2"></i>Nagrade</h3>
+                                    <ul class="info-box-list">
+                                        <li><span class="place place-1">1. mjesto</span> — 300€ + medalje</li>
+                                        <li><span class="place place-2">2. mjesto</span> — 150€ + medalje</li>
+                                        <li><span class="place place-3">3. mjesto</span> — 50€ + medalje</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-box">
+                                    <h3 class="info-box-title"><i class="bi bi-info-circle me-2"></i>Pravila</h3>
+                                    <ul class="info-box-list">
+                                        <li>Timovi: 5 igrača + 1 rezerva</li>
+                                        <li>Format: Best of 3 (finale Best of 5)</li>
+                                        <li>Mape: glasanje pred meč</li>
+                                        <li>Hakanje i cheating = diskvalifikacija</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+
+                    
+                    <div class="tab-pane fade"
+                         id="paneProgram"
+                         role="tabpanel"
+                         aria-labelledby="tab-program">
+
+                        <h3 class="tab-section-title">Raspored turnira</h3>
+
+                        <div class="accordion detalji-accordion" id="accordionProgram">
+
+                            
+                            <div class="accordion-item detalji-accordion-item">
+                                <h2 class="accordion-header" id="headingDan1">
+                                    <button class="accordion-button detalji-accordion-btn"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseDan1"
+                                            aria-expanded="true"
+                                            aria-controls="collapseDan1">
+                                        <span class="acc-dan">DAN 1</span>
+                                        <span class="acc-datum">15. siječnja — Osmina finala</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseDan1"
+                                     class="accordion-collapse collapse show"
+                                     role="region"
+                                     data-bs-parent="#accordionProgram">
+                                    <div class="accordion-body detalji-accordion-body">
+                                        <div class="program-item">
+                                            <span class="program-time">10:00</span>
+                                            <span class="program-event">Registracija i provjera opreme</span>
+                                        </div>
+                                        <div class="program-item">
+                                            <span class="program-time">11:00</span>
+                                            <span class="program-event">Žrijeb i upoznavanje s pravilima</span>
+                                        </div>
+                                        <div class="program-item">
+                                            <span class="program-time">12:00</span>
+                                            <span class="program-event">Osmina finala — 1. krug (4 meča)</span>
+                                        </div>
+                                        <div class="program-item">
+                                            <span class="program-time">16:00</span>
+                                            <span class="program-event">Osmina finala — 2. krug (4 meča)</span>
+                                        </div>
+                                        <div class="program-item">
+                                            <span class="program-time">20:00</span>
+                                            <span class="program-event">Kraj prvog dana</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="accordion-item detalji-accordion-item">
+                                <h2 class="accordion-header" id="headingDan2">
+                                    <button class="accordion-button detalji-accordion-btn collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseDan2"
+                                            aria-expanded="false"
+                                            aria-controls="collapseDan2">
+                                        <span class="acc-dan">DAN 2</span>
+                                        <span class="acc-datum">16. siječnja — Četvrtfinala i polufinala</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseDan2"
+                                     class="accordion-collapse collapse"
+                                     role="region"
+                                     data-bs-parent="#accordionProgram">
+                                    <div class="accordion-body detalji-accordion-body">
+                                        <div class="program-item">
+                                            <span class="program-time">11:00</span>
+                                            <span class="program-event">Zagrijavanje i priprema timova</span>
+                                        </div>
+                                        <div class="program-item">
+                                            <span class="program-time">12:00</span>
+                                            <span class="program-event">Četvrtfinala — 4 meča</span>
+                                        </div>
+                                        <div class="program-item">
+                                            <span class="program-time">16:00</span>
+                                            <span class="program-event">Polufinala — 2 meča</span>
+                                        </div>
+                                        <div class="program-item">
+                                            <span class="program-time">20:00</span>
+                                            <span class="program-event">Kraj drugog dana — najava finala</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="accordion-item detalji-accordion-item">
+                                <h2 class="accordion-header" id="headingDan3">
+                                    <button class="accordion-button detalji-accordion-btn collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseDan3"
+                                            aria-expanded="false"
+                                            aria-controls="collapseDan3">
+                                        <span class="acc-dan">DAN 3</span>
+                                        <span class="acc-datum">17. siječnja — Finale i proglašenje pobjednika</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseDan3"
+                                     class="accordion-collapse collapse"
+                                     role="region"
+                                     data-bs-parent="#accordionProgram">
+                                    <div class="accordion-body detalji-accordion-body">
+                                        <div class="program-item">
+                                            <span class="program-time">13:00</span>
+                                            <span class="program-event">Otvorena vrata za gledatelje</span>
+                                        </div>
+                                        <div class="program-item">
+                                            <span class="program-time">14:00</span>
+                                            <span class="program-event">Veliko finale — Best of 5</span>
+                                        </div>
+                                        <div class="program-item">
+                                            <span class="program-time">18:00</span>
+                                            <span class="program-event">Proglašenje pobjednika i dodjela nagrada</span>
+                                        </div>
+                                        <div class="program-item">
+                                            <span class="program-time">19:00</span>
+                                            <span class="program-event">Afterparty u BIGR Areni</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+                    
+
+
+                    
+                    <div class="tab-pane fade"
+                         id="paneVideo"
+                         role="tabpanel"
+                         aria-labelledby="tab-video">
+
+                        <h3 class="tab-section-title">Highlight video</h3>
+                        <p class="tab-video-desc">
+                            Pogledaj snimku prošlogodišnjeg CS2 Turnira i vidi kakvu atmosferu
+                            možeš očekivati u BIGR Areni.
+                        </p>
+
+                        <div class="ratio ratio-16x9 detalji-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                title="CS2 Turnir highlight video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+                
+
+            </div>
+            
+
+
+            
+            <div class="detalji-cta-banner">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h3 class="cta-title">Spreman za izazov?</h3>
+                        <p class="cta-desc">Prijave su otvorene do 12. siječnja 2026. Mjesta su ograničena!</p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <a href="turniri.html?turnir=cs2-12" class="btn btn-primary-custom">
+                            <i class="bi bi-controller me-2"></i>Prijavi se sada
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </main>
+    
+
+
+    
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row py-5">
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="../index.html" class="footer-brand mb-3">
+                        <img src="../images/logo-BiGr.png" alt="BIGR logo" height="40" class="navbar-logo-img">
+                        <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+                    </a>
+                    <p class="footer-desc">
+                        Moderna eSports i gaming arena stvorena za sve gamere.
+                        Mjesto strasti, zajedništva i pobjede.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-x" aria-label="X" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-twitch" aria-label="Twitch" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitch" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-youtube" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0 offset-lg-1">
+                    <p class="footer-title">LINKOVI</p>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Početna</a></li>
+                        <li><a href="turniri.html">Turniri</a></li>
+                        <li><a href="rang-liste.html">Rang liste</a></li>
+                        <li><a href="cijene.html">Cjenik</a></li>
+                        <li><a href="oprema.html">Oprema</a></li>
+                        <li><a href="o-nama.html">O nama</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <p class="footer-title">INFO</p>
+                    <ul class="footer-links">
+                        <li><a href="faq.html#pravila">Pravila ponašanja</a></li>
+                        <li><a href="faq.html#uvjeti">Uvjeti korištenja</a></li>
+                        <li><a href="faq.html#privatnost">Politika privatnosti</a></li>
+                        <li><a href="faq.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <p class="footer-title"><a href="kontakt.html">KONTAKT</a></p>
+                    <ul class="footer-contact">
+                        <li>
+                            <a href="kontakt.html">
+                                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                                <span>Ulica Gamera 1, 10000 Zagreb, Hrvatska</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html">
+                                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                                <span>+385 12 345 678</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                <span>info@bigr.arena.hr</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html">
+                                <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                                <span>Pon – Ned 09:00 – 24:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; 2026 BIGR Arena. Sva prava pridržana.</p>
+
+        </div>
+    </footer>
+    
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

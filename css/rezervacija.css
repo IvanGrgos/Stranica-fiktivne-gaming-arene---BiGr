@@ -1,0 +1,425 @@
+.rez-hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.rez-hero-label {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent-green);
+    margin-bottom: 0.5rem;
+}
+
+.rez-hero-naslov {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 900;
+    color: var(--text-white);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.rez-hero-opis {
+    font-size: 1rem;
+    color: var(--text-light);
+    max-width: 480px;
+    margin-bottom: 0;
+}
+
+
+.rez-section {
+    padding: 3rem 0 5rem;
+    background-color: var(--bg-primary);
+}
+
+
+.rez-form-sekcija {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.rez-form-naslov {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+}
+
+.rez-form-naslov i {
+    color: var(--accent-green);
+}
+
+
+.rez-form-sekcija .form-control,
+.rez-form-sekcija .form-select,
+.rez-form-sekcija .input-group-text {
+    background-color: var(--bg-section);
+    border-color: var(--border-subtle);
+    color: var(--text-white);
+}
+
+.rez-form-sekcija .form-control::placeholder {
+    color: var(--text-muted);
+}
+
+.rez-form-sekcija .form-control:focus,
+.rez-form-sekcija .form-select:focus {
+    background-color: var(--bg-section);
+    border-color: var(--accent-green);
+    box-shadow: 0 0 0 0.2rem rgba(61, 255, 110, 0.2);
+    color: var(--text-white);
+}
+
+.rez-form-sekcija .form-label {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.rez-form-sekcija .input-group-text {
+    color: var(--text-muted);
+}
+
+.rez-form-sekcija .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%236b7a99' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.rez-form-sekcija input[type="date"]::-webkit-calendar-picker-indicator,
+.rez-form-sekcija input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.6);
+    cursor: pointer;
+}
+
+.rez-form-sekcija textarea.form-control {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.rez-optional {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+
+.rez-odabrani-paket {
+    background: linear-gradient(135deg, rgba(61, 255, 110, 0.08), rgba(61, 255, 110, 0.03));
+    border: 1px solid var(--accent-green);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.rez-odabrani-paket-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--accent-green);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.rez-odabrani-paket-body {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.rez-odabrani-ikona {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgba(61, 255, 110, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--accent-green);
+    flex-shrink: 0;
+}
+
+.rez-odabrani-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.rez-odabrani-naziv {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--text-white);
+    letter-spacing: 2px;
+}
+
+.rez-odabrani-opis {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.rez-odabrani-cijena {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--accent-green);
+    white-space: nowrap;
+}
+
+.rez-promijeni-btn {
+    background-color: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-subtle);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    padding: 0.35rem 0.85rem;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.rez-promijeni-btn:hover {
+    color: var(--accent-green);
+    border-color: var(--accent-green);
+}
+
+
+.rez-paket-card {
+    display: block;
+    cursor: pointer;
+    height: 100%;
+}
+
+.rez-paket-card-body {
+    background-color: var(--bg-section);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 1.25rem 0.85rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.rez-paket-card-body:hover {
+    border-color: rgba(61, 255, 110, 0.4);
+}
+
+.rez-paket-card input[type="radio"]:checked + .rez-paket-card-body {
+    border-color: var(--accent-green);
+    background-color: rgba(61, 255, 110, 0.08);
+    box-shadow: 0 0 0 2px var(--accent-green);
+}
+
+.rez-paket-card-icon {
+    font-size: 1.5rem;
+    color: var(--accent-green);
+}
+
+.rez-paket-card-naziv {
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 1px;
+}
+
+.rez-paket-card-cijena {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 900;
+    color: var(--text-white);
+}
+
+.rez-paket-card-cijena span {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+.rez-paket-card-popular {
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #000;
+    background-color: var(--accent-green);
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+
+
+.rez-submit-btn {
+    padding: 1rem;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+
+.rez-summary {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 2rem;
+    top: 1.5rem;
+}
+
+.rez-summary-naslov {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+}
+
+.rez-summary-naslov i {
+    color: var(--accent-green);
+}
+
+.rez-summary-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.rez-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rez-summary-label {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    white-space: nowrap;
+}
+
+.rez-summary-label i {
+    color: var(--accent-green);
+    font-size: 0.8rem;
+}
+
+.rez-summary-value {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-white);
+    text-align: right;
+}
+
+.rez-summary-divider {
+    border-color: var(--border-subtle);
+    margin: 1.25rem 0;
+}
+
+.rez-summary-ukupno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rez-summary-ukupno-label {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.rez-summary-cijena {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--accent-green);
+}
+
+.rez-summary-napomena {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+
+.rez-modal {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+}
+
+.rez-modal-ikona {
+    font-size: 3.5rem;
+    color: var(--accent-green);
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.rez-modal-naslov {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--text-white);
+    margin-bottom: 0.75rem;
+}
+
+.rez-modal-tekst {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 767.98px) {
+    .rez-hero {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .rez-form-sekcija {
+        padding: 1.5rem;
+    }
+
+    .rez-odabrani-paket {
+        padding: 1.25rem;
+    }
+
+    .rez-odabrani-paket-body {
+        gap: 0.75rem;
+    }
+
+    .rez-summary {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,391 @@
+
+
+.detalji-main {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+}
+
+
+.detalji-breadcrumb {
+    margin-bottom: 2.5rem;
+}
+
+.detalji-breadcrumb .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.detalji-breadcrumb .breadcrumb-item a {
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.detalji-breadcrumb .breadcrumb-item a:hover {
+    color: var(--accent-green);
+}
+
+.detalji-breadcrumb .breadcrumb-item.active {
+    color: var(--text-light);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+}
+
+.detalji-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--text-muted);
+    content: "›";
+}
+
+
+.detalji-slika {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--border-subtle);
+    display: block;
+}
+
+
+.detalji-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.detalji-badge {
+    background-color: rgba(61, 255, 110, 0.15);
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+.detalji-naslov {
+    font-family: var(--font-heading);
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    font-weight: 900;
+    color: var(--text-white);
+    margin-bottom: 1rem;
+    line-height: 1.15;
+}
+
+.detalji-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.detalji-meta span {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.detalji-meta i {
+    color: var(--accent-green);
+    font-size: 1rem;
+}
+
+.detalji-cijena {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cijena-label {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cijena-iznos {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent-green);
+}
+
+.detalji-divider {
+    border-color: var(--border-subtle);
+    margin: 1rem 0;
+}
+
+.detalji-opis-kratki {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+
+.detalji-tabs-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.detalji-nav-tabs {
+    border-bottom: 2px solid var(--border-subtle) !important;
+    gap: 0.25rem;
+    margin-bottom: 0;
+}
+
+.detalji-nav-tabs .nav-link {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--text-muted) !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 2px solid transparent !important;
+    border-radius: 0 !important;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -2px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.detalji-nav-tabs .nav-link:hover {
+    color: var(--text-light) !important;
+    border-bottom-color: rgba(61, 255, 110, 0.4) !important;
+}
+
+.detalji-nav-tabs .nav-link.active {
+    color: var(--accent-green) !important;
+    border-bottom: 2px solid var(--accent-green) !important;
+    background: transparent !important;
+}
+
+.detalji-tab-content {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 2rem 2rem 2.5rem;
+}
+
+.tab-section-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+
+.info-box {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    height: 100%;
+}
+
+.info-box-title {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent-green);
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.info-box-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-box-list li {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-light);
+    padding: 0.3rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-box-list li:last-child {
+    border-bottom: none;
+}
+
+.place {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.place-1 { background-color: #FFD700; color: #000; }
+.place-2 { background-color: #C0C0C0; color: #000; }
+.place-3 { background-color: #CD7F32; color: #000; }
+
+
+.detalji-accordion {
+    margin-top: 0.5rem;
+}
+
+.detalji-accordion-item {
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid var(--border-subtle) !important;
+    border-radius: 6px !important;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.detalji-accordion-btn {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-white) !important;
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    padding: 1rem 1.25rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.detalji-accordion-btn:not(.collapsed) {
+    background-color: rgba(61, 255, 110, 0.06) !important;
+    color: var(--accent-green) !important;
+}
+
+.detalji-accordion-btn::after {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(50%) saturate(400%) hue-rotate(80deg);
+}
+
+.acc-dan {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent-green);
+    flex-shrink: 0;
+}
+
+.acc-datum {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.detalji-accordion-body {
+    background-color: var(--bg-card) !important;
+    padding: 1rem 1.25rem !important;
+}
+
+.program-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.program-item:last-child {
+    border-bottom: none;
+}
+
+.program-time {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-green);
+    min-width: 48px;
+    flex-shrink: 0;
+}
+
+.program-event {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    color: var(--text-light);
+}
+
+
+.tab-video-desc {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.detalji-video {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+}
+
+
+.detalji-cta-banner {
+    background: linear-gradient(135deg, rgba(61, 255, 110, 0.08) 0%, rgba(61, 255, 110, 0.02) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+    margin-top: 1rem;
+}
+
+.cta-title {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 0.4rem;
+}
+
+.cta-desc {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+
+@media (max-width: 767.98px) {
+    .detalji-main {
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .detalji-slika {
+        height: 240px;
+        margin-bottom: 0.5rem;
+    }
+
+    .detalji-tab-content {
+        padding: 1.25rem;
+    }
+
+    .detalji-cta-banner {
+        padding: 1.5rem;
+        text-align: center;
+    }
+}
+
+h3.info-box-title {
+    font-size: 0.9rem;
+}

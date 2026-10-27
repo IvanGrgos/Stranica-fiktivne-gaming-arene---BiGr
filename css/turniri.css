@@ -1,0 +1,530 @@
+
+.turniri-hero {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: unset;
+    background-image: linear-gradient(rgba(8, 12, 22, 0.85), rgba(8, 12, 22, 0.92)), url('../images/pozadina turnira.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.turniri-hero-slika {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--border-subtle);
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.turniri-hero-slika:hover {
+    opacity: 0.85;
+}
+
+.turniri-hero-title h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-weight: 900;
+    color: var(--text-white);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.prijava-toggle {
+    margin-bottom: 2rem;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    color: var(--text-light);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.65rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+    border-color: var(--accent-green);
+    color: var(--text-white);
+}
+
+.toggle-btn--active {
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+    background-color: rgba(61, 255, 110, 0.08);
+}
+
+.toggle-btn--active i {
+    color: var(--accent-green);
+}
+
+.prijava-form-wrapper {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 2rem 2.5rem;
+}
+
+.form-section-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.form-label-custom {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.form-control-custom {
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid var(--border-subtle) !important;
+    color: var(--text-light) !important;
+    font-family: var(--font-body) !important;
+    font-size: 0.95rem !important;
+    border-radius: 6px !important;
+    padding: 0.6rem 0.9rem !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.form-control-custom:focus {
+    border-color: var(--accent-green) !important;
+    box-shadow: 0 0 0 3px rgba(61, 255, 110, 0.12) !important;
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-white) !important;
+    outline: none !important;
+}
+
+.form-control-custom::placeholder {
+    color: var(--text-muted) !important;
+}
+
+.form-control-custom option {
+    background-color: var(--bg-card);
+    color: var(--text-light);
+}
+
+.btn-prijava {
+    background-color: transparent;
+    color: var(--accent-green);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: 2px solid var(--accent-green);
+    border-radius: 6px;
+    padding: 0.75rem 2.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 160px;
+}
+
+.btn-prijava:hover {
+    background-color: var(--accent-green);
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(61, 255, 110, 0.3);
+}
+
+
+.stablo-section {
+    padding: 4rem 0;
+    background-color: var(--bg-primary);
+    overflow-x: auto;
+}
+
+.stablo-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 900;
+    color: var(--text-white);
+    margin-bottom: 0;
+}
+
+.stablo-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+.stablo-select {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-subtle) !important;
+    color: var(--text-light) !important;
+    font-family: var(--font-body) !important;
+    font-size: 0.9rem !important;
+    min-width: 180px;
+}
+
+.stablo-select:focus {
+    border-color: var(--accent-green) !important;
+    box-shadow: none !important;
+}
+
+.bracket-rounds-header {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 0.8fr;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    min-width: 800px;
+}
+
+.round-label {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    padding: 0.5rem 0;
+    text-align: left;
+}
+
+.round-label--active {
+    color: var(--accent-green);
+    border-bottom: 2px solid var(--accent-green);
+}
+
+.bracket-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 0.8fr;
+    gap: 1rem;
+    align-items: center;
+    min-width: 800px;
+}
+
+.bracket-round {
+    display: flex;
+    flex-direction: column;
+}
+
+.round-of-16 { gap: 0.5rem; }
+.quarterfinals { gap: 3.5rem; padding-top: 1.75rem; }
+.semifinals { gap: 8.5rem; padding-top: 5.75rem; }
+.finale { gap: 1rem; padding-top: 12rem; display: flex; flex-direction: column; align-items: center; }
+
+.bracket-match {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.bracket-match:hover {
+    border-color: rgba(61, 255, 110, 0.4);
+}
+
+.bracket-team {
+    cursor: pointer;
+}
+
+.bracket-team {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 0.65rem;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-subtle);
+    transition: background-color 0.15s ease;
+}
+
+.bracket-team:last-child {
+    border-bottom: none;
+}
+
+.bracket-team.winner {
+    color: var(--text-white);
+    background-color: rgba(61, 255, 110, 0.05);
+}
+
+.bracket-team.finale-winner {
+    background-color: rgba(61, 255, 110, 0.1);
+}
+
+.team-seed {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    min-width: 14px;
+    text-align: center;
+}
+
+.team-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.team-name {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.team-score {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    min-width: 22px;
+    text-align: center;
+    background-color: var(--bg-secondary);
+    border-radius: 3px;
+    padding: 1px 5px;
+}
+
+.winner-score {
+    background-color: var(--accent-green);
+    color: #000000;
+}
+
+.pobjednik-box {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.pobjednik-label {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+}
+
+.pobjednik-trophy {
+    font-size: 2rem;
+    color: var(--accent-green);
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.pobjednik-name {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent-green);
+}
+
+
+.info-strip {
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 2.5rem 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.info-icon {
+    font-size: 2rem;
+    color: var(--accent-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.info-title {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 0.2rem;
+}
+
+.info-desc {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+
+@media (max-width: 767.98px) {
+    .turniri-hero {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .prijava-form-wrapper {
+        padding: 1.5rem;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .stablo-section {
+        overflow-x: scroll;
+    }
+}
+
+.stablo-detalji-link {
+    font-size: inherit;
+    color: var(--accent-green);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.stablo-detalji-link:hover { color: var(--text-white); }
+
+.turnir-detalji-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 520px;
+}
+
+.detalji-card-label {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent-green);
+    margin-bottom: 0.4rem;
+}
+
+.detalji-card-naziv {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 0.75rem;
+}
+
+.detalji-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+}
+
+.detalji-card-meta span {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.detalji-card-meta i {
+    color: var(--accent-green);
+}
+
+.tim-modal-content {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.tim-modal-header {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 1rem 1.25rem;
+}
+
+.tim-modal-title {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin: 0;
+}
+
+.tim-modal-body {
+    padding: 1rem 1.25rem;
+}
+
+.tim-igrac {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.tim-igrac:last-child {
+    border-bottom: none;
+}
+
+.tim-igrac-ikona {
+    font-size: 1.3rem;
+    color: var(--accent-green);
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.tim-igrac-nick {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-white);
+    flex: 1;
+}
+
+.tim-igrac-rola {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background-color: var(--bg-secondary);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.prijava-tabs .nav-link {
+    background: transparent !important;
+    border: 2px solid var(--border-color) !important;
+    border-radius: 6px !important;
+    color: var(--text-light) !important;
+    font-family: var(--font-body) !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    padding: 0.65rem 1.5rem !important;
+    margin-right: 0.5rem;
+    transition: all 0.2s ease !important;
+}
+
+.prijava-tabs .nav-link:hover {
+    border-color: var(--accent-green) !important;
+    color: var(--text-white) !important;
+}
+
+.prijava-tabs .nav-link.active {
+    border-color: var(--accent-green) !important;
+    color: var(--accent-green) !important;
+    background-color: rgba(61, 255, 110, 0.08) !important;
+}
+.prijava-form-wrapper {
+    height: 100%;
+}

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervacija – BIGR Esports &amp; Gaming Arena</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/rezervacija.css">
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMain"
+                    aria-controls="navbarMain"
+                    aria-expanded="false"
+                    aria-label="Otvori navigaciju">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo-BiGr.png" alt="BIGR logo" height="42" class="navbar-logo-img">
+                <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Početna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="turniri.html">Turniri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rang-liste.html">Rang liste</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cijene.html">Cjenik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="oprema.html">Oprema</a></li>
+                    <li class="nav-item"><a class="nav-link" href="o-nama.html">O nama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <div class="navbar-user">
+                    <a href="login.html" class="user-icon" aria-label="Korisnički račun">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    
+    <section class="rez-hero" aria-label="Rezervacija termina">
+        <div class="container">
+            <p class="rez-hero-label">GAMING ARENA</p>
+            <h1 class="rez-hero-naslov">REZERVACIJA</h1>
+            <p class="rez-hero-opis">
+                Dovršite rezervaciju i osigurajte svoje mjesto u areni.
+                Bez čekanja — rezervirajte unaprijed.
+            </p>
+        </div>
+    </section>
+    
+
+
+    
+    <section class="rez-section">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+
+                
+                <div class="col-lg-8">
+
+                    <form id="rezervacijaForma" novalidate>
+
+                        <div id="odabraniPaketBanner" class="rez-odabrani-paket" hidden>
+                            <div class="rez-odabrani-paket-header">
+                                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                                ODABRANI PAKET
+                            </div>
+                            <div class="rez-odabrani-paket-body">
+                                <div class="rez-odabrani-ikona">
+                                    <i class="bi bi-person" aria-hidden="true"></i>
+                                </div>
+                                <div class="rez-odabrani-info">
+                                    <div class="rez-odabrani-naziv" id="banner-naziv">—</div>
+                                    <div class="rez-odabrani-opis" id="banner-opis">—</div>
+                                </div>
+                                <div class="rez-odabrani-cijena" id="banner-cijena">—</div>
+                                <button type="button" class="btn rez-promijeni-btn" id="btnPromijeniPaket">
+                                    <i class="bi bi-pencil me-1" aria-hidden="true"></i>Promijeni
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="rez-form-sekcija">
+                            <h2 class="rez-form-naslov">
+                                <i class="bi bi-calendar3 me-2" aria-hidden="true"></i>Termin
+                            </h2>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="rez-datum" class="form-label">Datum</label>
+                                    <div class="input-group">
+                                        <input type="date" class="form-control" id="rez-datum" required>
+                                        <span class="input-group-text" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="rez-vrijeme" class="form-label">Vrijeme početka</label>
+                                    <div class="input-group">
+                                        <input type="time" class="form-control" id="rez-vrijeme" required>
+                                        <span class="input-group-text" aria-hidden="true"><i class="bi bi-clock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="rez-trajanje" class="form-label">Trajanje</label>
+                                    <select class="form-select" id="rez-trajanje" required>
+                                        <option value="" disabled selected>Odaberite trajanje</option>
+                                        <option value="1">1 sat</option>
+                                        <option value="2">2 sata</option>
+                                        <option value="3">3 sata</option>
+                                        <option value="4">4 sata</option>
+                                        <option value="5">5 sati</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="rez-igraci" class="form-label">Broj igrača</label>
+                                    <select class="form-select" id="rez-igraci" required>
+                                        <option value="" disabled selected>Odaberite broj igrača</option>
+                                        <option value="1">1 igrač</option>
+                                        <option value="2">2 igrača</option>
+                                        <option value="3">3 igrača</option>
+                                        <option value="4">4 igrača</option>
+                                        <option value="5">5 igrača</option>
+                                        <option value="6">6+ igrača</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="rez-form-sekcija" id="paketOdabirSekcija">
+                            <h3 class="rez-form-naslov">
+                                <i class="bi bi-grid me-2" aria-hidden="true"></i>Paket
+                            </h3>
+                            <div class="row g-3">
+
+                                <div class="col-6 col-md-3">
+                                    <label class="rez-paket-card" for="paket-basic">
+                                        <input type="radio" name="paket" id="paket-basic" value="BASIC" class="visually-hidden">
+                                        <div class="rez-paket-card-body">
+                                            <i class="bi bi-person rez-paket-card-icon" aria-hidden="true"></i>
+                                            <div class="rez-paket-card-naziv">BASIC</div>
+                                            <div class="rez-paket-card-cijena">2,50€<span>/sat</span></div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="col-6 col-md-3">
+                                    <label class="rez-paket-card" for="paket-standard">
+                                        <input type="radio" name="paket" id="paket-standard" value="STANDARDNO" class="visually-hidden">
+                                        <div class="rez-paket-card-body">
+                                            <i class="bi bi-star rez-paket-card-icon" aria-hidden="true"></i>
+                                            <div class="rez-paket-card-naziv">STANDARDNO</div>
+                                            <div class="rez-paket-card-cijena">3,50€<span>/sat</span></div>
+                                            <div class="rez-paket-card-popular">Popularno</div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="col-6 col-md-3">
+                                    <label class="rez-paket-card" for="paket-premium">
+                                        <input type="radio" name="paket" id="paket-premium" value="PREMIUM" class="visually-hidden">
+                                        <div class="rez-paket-card-body">
+                                            <i class="bi bi-gem rez-paket-card-icon" aria-hidden="true"></i>
+                                            <div class="rez-paket-card-naziv">PREMIUM</div>
+                                            <div class="rez-paket-card-cijena">5,00€<span>/sat</span></div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="col-6 col-md-3">
+                                    <label class="rez-paket-card" for="paket-team">
+                                        <input type="radio" name="paket" id="paket-team" value="TEAM ROOM" class="visually-hidden">
+                                        <div class="rez-paket-card-body">
+                                            <i class="bi bi-people rez-paket-card-icon" aria-hidden="true"></i>
+                                            <div class="rez-paket-card-naziv">TEAM ROOM</div>
+                                            <div class="rez-paket-card-cijena">20,00€<span>/sat</span></div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        
+                        <div class="rez-form-sekcija">
+                            <h3 class="rez-form-naslov">
+                                <i class="bi bi-person me-2" aria-hidden="true"></i>Osobni podaci
+                            </h3>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="rez-ime" class="form-label">Ime i prezime</label>
+                                    <input type="text" class="form-control" id="rez-ime" placeholder="Npr. Ivan Horvat" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="rez-email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="rez-email" placeholder="ivan@email.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="rez-telefon" class="form-label">Telefon</label>
+                                    <input type="tel" class="form-control" id="rez-telefon" placeholder="+385 9x xxx xxxx">
+                                </div>
+                                <div class="col-12">
+                                    <label for="rez-napomena" class="form-label">
+                                        Napomena <span class="rez-optional">(neobavezno)</span>
+                                    </label>
+                                    <textarea class="form-control" id="rez-napomena" rows="3" placeholder="Posebni zahtjevi, pitanja..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary-custom w-100 rez-submit-btn"
+                                data-bs-toggle="modal" data-bs-target="#uspjehModal">
+                            <i class="bi bi-calendar2-check me-2" aria-hidden="true"></i>Potvrdi rezervaciju
+                        </button>
+
+                    </form>
+                </div>
+
+                
+                <div class="col-lg-4">
+                    <div class="rez-summary" role="complementary" aria-label="Pregled rezervacije">
+                        <h4 class="rez-summary-naslov">
+                            <i class="bi bi-receipt me-2" aria-hidden="true"></i>Pregled rezervacije
+                        </h4>
+                        <div class="rez-summary-rows">
+                            <div class="rez-summary-row">
+                                <span class="rez-summary-label">
+                                    <i class="bi bi-calendar3" aria-hidden="true"></i> Datum
+                                </span>
+                                <span class="rez-summary-value" id="sum-datum">—</span>
+                            </div>
+                            <div class="rez-summary-row">
+                                <span class="rez-summary-label">
+                                    <i class="bi bi-clock" aria-hidden="true"></i> Početak
+                                </span>
+                                <span class="rez-summary-value" id="sum-vrijeme">—</span>
+                            </div>
+                            <div class="rez-summary-row">
+                                <span class="rez-summary-label">
+                                    <i class="bi bi-hourglass" aria-hidden="true"></i> Trajanje
+                                </span>
+                                <span class="rez-summary-value" id="sum-trajanje">—</span>
+                            </div>
+                            <div class="rez-summary-row">
+                                <span class="rez-summary-label">
+                                    <i class="bi bi-people" aria-hidden="true"></i> Igrači
+                                </span>
+                                <span class="rez-summary-value" id="sum-igraci">—</span>
+                            </div>
+                            <div class="rez-summary-row">
+                                <span class="rez-summary-label">
+                                    <i class="bi bi-grid" aria-hidden="true"></i> Paket
+                                </span>
+                                <span class="rez-summary-value" id="sum-paket">—</span>
+                            </div>
+                        </div>
+                        <hr class="rez-summary-divider">
+                        <div class="rez-summary-ukupno">
+                            <span class="rez-summary-ukupno-label">Ukupno</span>
+                            <span class="rez-summary-cijena" id="sum-cijena">—</span>
+                        </div>
+                        <p class="rez-summary-napomena">
+                            <i class="bi bi-info-circle me-1" aria-hidden="true"></i>Sve cijene uključuju PDV. Minimalna rezervacija 1 sat.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+    <div class="modal fade" id="uspjehModal" tabindex="-1" role="dialog" aria-labelledby="uspjehModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rez-modal">
+                <div class="modal-body text-center p-5">
+                    <div class="rez-modal-ikona" aria-hidden="true">
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <h3 class="rez-modal-naslov" id="uspjehModalLabel">Rezervacija potvrđena!</h3>
+                    <p class="rez-modal-tekst">
+                        Vaša rezervacija je uspješno zaprimljena. Potvrdu ćemo poslati na vašu e-mail adresu.
+                    </p>
+                    <a href="../index.html" class="btn btn-primary-custom">
+                        <i class="bi bi-house me-2" aria-hidden="true"></i>Povratak na početnu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="../index.html" class="footer-brand mb-3">
+                        <img src="../images/logo-BiGr.png" alt="BIGR logo" height="40" class="navbar-logo-img">
+                        <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+                    </a>
+                    <p class="footer-desc">Moderna eSports i gaming arena stvorena za sve gamere. Mjesto strasti, zajedništva i pobjede.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-x" aria-label="X" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-twitch" aria-label="Twitch" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitch" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-youtube" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0 offset-lg-1">
+                    <p class="footer-title">LINKOVI</p>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Početna</a></li>
+                        <li><a href="turniri.html">Turniri</a></li>
+                        <li><a href="rang-liste.html">Rang liste</a></li>
+                        <li><a href="cijene.html">Cjenik</a></li>
+                        <li><a href="oprema.html">Oprema</a></li>
+                        <li><a href="o-nama.html">O nama</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <p class="footer-title">INFO</p>
+                    <ul class="footer-links">
+                        <li><a href="faq.html#pravila">Pravila ponašanja</a></li>
+                        <li><a href="faq.html#uvjeti">Uvjeti korištenja</a></li>
+                        <li><a href="faq.html#privatnost">Politika privatnosti</a></li>
+                        <li><a href="faq.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <p class="footer-title"><a href="kontakt.html">KONTAKT</a></p>
+                    <ul class="footer-contact">
+                        <li><a href="kontakt.html"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i><span>Ulica Gamera 1, 10000 Zagreb, Hrvatska</span></a></li>
+                        <li><a href="kontakt.html"><i class="bi bi-telephone-fill" aria-hidden="true"></i><span>+385 12 345 678</span></a></li>
+                        <li><a href="kontakt.html"><i class="bi bi-envelope-fill" aria-hidden="true"></i><span>info@bigr.arena.hr</span></a></li>
+                        <li><a href="kontakt.html"><i class="bi bi-clock-fill" aria-hidden="true"></i><span>Pon – Ned 09:00 – 24:00</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; 2026 BIGR Arena. Sva prava pridržana.</p>
+        </div>
+    </footer>
+    
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    (function () {
+        var PAKETI = {
+            'BASIC':      { cijena: 2.50,  opis: 'Idealno za kraće sesije',          ikona: 'bi-person',  perIgrac: true  },
+            'STANDARDNO': { cijena: 3.50,  opis: 'Savršen balans cijene i perf.',    ikona: 'bi-star',    perIgrac: true  },
+            'PREMIUM':    { cijena: 5.00,  opis: 'Za one koji žele najbolje',        ikona: 'bi-gem',     perIgrac: true  },
+            'TEAM ROOM':  { cijena: 20.00, opis: 'Za ekipe do 5 igrača – fiksna cijena', ikona: 'bi-people', perIgrac: false }
+        };
+
+        var params  = new URLSearchParams(window.location.search);
+        var pDatum  = params.get('datum');
+        var pVrijeme = params.get('vrijeme');
+        var pTrajanje = params.get('trajanje');
+        var pIgraci  = params.get('igraci');
+        var pPaket   = params.get('paket') || sessionStorage.getItem('bigr_paket') || '';
+
+        if (pDatum)    document.getElementById('rez-datum').value    = pDatum;
+        if (pVrijeme)  document.getElementById('rez-vrijeme').value  = pVrijeme;
+        if (pTrajanje) document.getElementById('rez-trajanje').value = pTrajanje;
+        if (pIgraci)   document.getElementById('rez-igraci').value   = pIgraci;
+
+        if (pPaket) {
+            var radio = document.querySelector('input[name="paket"][value="' + pPaket + '"]');
+            if (radio) radio.checked = true;
+        }
+
+        function formatDatum(str) {
+            var d = str.split('-');
+            return d[2] + '.' + d[1] + '.' + d[0] + '.';
+        }
+
+        function trajanjeLabel(h) {
+            h = parseInt(h);
+            if (!h) return '—';
+            if (h === 1) return '1 sat';
+            if (h < 5)   return h + ' sata';
+            return h + ' sati';
+        }
+
+        function igraciLabel(n) {
+            n = parseInt(n);
+            if (!n) return '—';
+            if (n === 1) return '1 igrač';
+            return n + ' igrača';
+        }
+
+        function azurirajSazetak() {
+            var datum    = document.getElementById('rez-datum').value;
+            var vrijeme  = document.getElementById('rez-vrijeme').value;
+            var trajanje = parseInt(document.getElementById('rez-trajanje').value) || 0;
+            var igraci   = parseInt(document.getElementById('rez-igraci').value) || 0;
+            var radio    = document.querySelector('input[name="paket"]:checked');
+            var paket    = radio ? radio.value : '';
+
+            document.getElementById('sum-datum').textContent    = datum    ? formatDatum(datum) : '—';
+            document.getElementById('sum-vrijeme').textContent  = vrijeme  ? vrijeme            : '—';
+            document.getElementById('sum-trajanje').textContent = trajanjeLabel(trajanje);
+            document.getElementById('sum-igraci').textContent   = igraciLabel(igraci);
+            document.getElementById('sum-paket').textContent    = paket    ? paket              : '—';
+
+            var ukupno = '—';
+            if (paket && trajanje && PAKETI[paket]) {
+                var info = PAKETI[paket];
+                var total;
+                if (info.perIgrac && igraci > 0) {
+                    total = info.cijena * trajanje * igraci;
+                } else if (!info.perIgrac) {
+                    total = info.cijena * trajanje;
+                }
+                if (total !== undefined) {
+                    ukupno = total.toFixed(2).replace('.', ',') + ' €';
+                }
+            }
+            document.getElementById('sum-cijena').textContent = ukupno;
+
+            azurirajBaner(paket);
+        }
+
+        function azurirajBaner(paket) {
+            var baner = document.getElementById('odabraniPaketBanner');
+            if (!baner) return;
+
+            if (!paket || !PAKETI[paket]) {
+                baner.hidden = true;
+                return;
+            }
+
+            var info = PAKETI[paket];
+            baner.hidden = false;
+            baner.querySelector('.rez-odabrani-ikona i').className = 'bi ' + info.ikona;
+            document.getElementById('banner-naziv').textContent = paket;
+            document.getElementById('banner-opis').textContent  = info.opis;
+            document.getElementById('banner-cijena').textContent = info.cijena.toFixed(2).replace('.', ',') + ' €/sat';
+        }
+
+        document.getElementById('rez-datum').addEventListener('change', azurirajSazetak);
+        document.getElementById('rez-vrijeme').addEventListener('change', azurirajSazetak);
+        document.getElementById('rez-trajanje').addEventListener('change', azurirajSazetak);
+        document.getElementById('rez-igraci').addEventListener('change', azurirajSazetak);
+
+        document.querySelectorAll('input[name="paket"]').forEach(function (r) {
+            r.addEventListener('change', azurirajSazetak);
+        });
+
+        var btnPromijeni = document.getElementById('btnPromijeniPaket');
+        if (btnPromijeni) {
+            btnPromijeni.addEventListener('click', function () {
+                var sekcija = document.getElementById('paketOdabirSekcija');
+                if (sekcija) sekcija.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        }
+
+        azurirajSazetak();
+    })();
+    </script>
+</body>
+</html>

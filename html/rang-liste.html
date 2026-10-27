@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIGR – Rang liste</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/global.css">
+    
+    <link rel="stylesheet" href="../css/rang-liste.css">
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMain"
+                    aria-controls="navbarMain"
+                    aria-expanded="false"
+                    aria-label="Otvori navigaciju">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo-BiGr.png" alt="BIGR logo" height="42" class="navbar-logo-img">
+                <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./turniri.html">Turniri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./rang-liste.html">Rang liste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cijene.html">Cjenik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./oprema.html">Oprema</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./o-nama.html">O nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <div class="navbar-user">
+                    <a href="./login.html" class="user-icon" aria-label="Korisnički račun">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    
+
+
+    
+    <section class="rl-hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                
+                <div class="col-lg-6">
+                    <p class="rl-label">NATJECATELJSKE RANK LISTE</p>
+                    <h1 class="rl-heading">POKAŽI SVOJU<br>DOMINACIJU</h1>
+                    <p class="rl-desc">
+                        Prati svoj napredak, usporedi se s
+                        najboljima i osvoji vrh naših rang
+                        lista. Samo najbolji ostaju na vrhu.
+                    </p>
+                </div>
+
+                
+        <div class="col-lg-6 d-none d-lg-block">
+            <a href="./galerija.html">
+                <img src="../images/igraonica.png" alt="BIGR gaming arena" class="rl-hero-img">
+            </a>
+        </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+    <section class="rl-section">
+        <div class="container">
+
+            
+            <div class="games-label-row">
+                <span class="games-label">IGRE</span>
+                <span class="games-line"></span>
+            </div>
+
+            
+            <ul class="nav rl-game-tabs" id="gameTabs" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="rl-game-btn active" id="tab-cs2"
+                            data-bs-toggle="tab" data-bs-target="#pane-cs2"
+                            type="button" role="tab" aria-controls="pane-cs2" aria-selected="true">
+                        <span class="game-icon game-icon-cs2">
+                            <i class="bi bi-crosshair2"></i>
+                        </span>
+                        CS2
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="rl-game-btn" id="tab-valo"
+                            data-bs-toggle="tab" data-bs-target="#pane-valo"
+                            type="button" role="tab" aria-controls="pane-valo" aria-selected="false">
+                        <span class="game-icon game-icon-valo">
+                            <i class="bi bi-shield-fill"></i>
+                        </span>
+                        VALO
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="rl-game-btn" id="tab-lol"
+                            data-bs-toggle="tab" data-bs-target="#pane-lol"
+                            type="button" role="tab" aria-controls="pane-lol" aria-selected="false">
+                        <span class="game-icon game-icon-lol">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </span>
+                        LoL
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="rl-game-btn" id="tab-fort"
+                            data-bs-toggle="tab" data-bs-target="#pane-fort"
+                            type="button" role="tab" aria-controls="pane-fort" aria-selected="false">
+                        <span class="game-icon game-icon-fort">
+                            <i class="bi bi-buildings-fill"></i>
+                        </span>
+                        FORT
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="rl-game-btn" id="tab-rl"
+                            data-bs-toggle="tab" data-bs-target="#pane-rl"
+                            type="button" role="tab" aria-controls="pane-rl" aria-selected="false">
+                        <span class="game-icon game-icon-rl">
+                            <i class="bi bi-rocket-fill"></i>
+                        </span>
+                        RL
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="rl-game-btn" id="tab-ostalo"
+                            data-bs-toggle="tab" data-bs-target="#pane-ostalo"
+                            type="button" role="tab" aria-controls="pane-ostalo" aria-selected="false">
+                        <span class="game-icon game-icon-ostalo">
+                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                        </span>
+                        OSTALO
+                    </button>
+                </li>
+
+            </ul>
+
+            
+            <div class="tab-content rl-tab-content" id="gameTabContent">
+
+                
+                <div class="tab-pane fade show active" id="pane-cs2" role="tabpanel" aria-labelledby="tab-cs2">
+                    <div class="rl-card">
+                        <h2 class="rl-card-title"><em>CS2 RANG LISTA</em></h2>
+                        <div class="rl-table-header">
+                            <span>Pozicija</span>
+                            <span>Igrač</span>
+                            <span>Bodovi</span>
+                        </div>
+                        <div class="rl-rows">
+                            <div class="rl-row rl-row--gold">
+                                <div class="rl-pos">1.</div>
+                                <div class="rl-name">Bilke</div>
+                                <div class="rl-score">2506</div>
+                            </div>
+                            <div class="rl-row rl-row--silver">
+                                <div class="rl-pos">2.</div>
+                                <div class="rl-name">Grga</div>
+                                <div class="rl-score">2000</div>
+                            </div>
+                            <div class="rl-row rl-row--bronze">
+                                <div class="rl-pos">3.</div>
+                                <div class="rl-name">CroAres</div>
+                                <div class="rl-score">1978</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">4.</div>
+                                <div class="rl-name">Korrni</div>
+                                <div class="rl-score">1954</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">5.</div>
+                                <div class="rl-name">Padavicar</div>
+                                <div class="rl-score">1877</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">6.</div>
+                                <div class="rl-name">MakaronizMesom</div>
+                                <div class="rl-score">1867</div>
+                            </div>
+                        </div>
+                        <div class="rl-show-all">
+                            <button class="btn btn-primary-custom rl-show-btn">Prikaži sve</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="tab-pane fade" id="pane-valo" role="tabpanel" aria-labelledby="tab-valo">
+                    <div class="rl-card">
+                        <h2 class="rl-card-title"><em>VALORANT RANG LISTA</em></h2>
+                        <div class="rl-table-header">
+                            <span>Pozicija</span>
+                            <span>Igrač</span>
+                            <span>Bodovi</span>
+                        </div>
+                        <div class="rl-rows">
+                            <div class="rl-row rl-row--gold">
+                                <div class="rl-pos">1.</div>
+                                <div class="rl-name">ValoQueen</div>
+                                <div class="rl-score">3120</div>
+                            </div>
+                            <div class="rl-row rl-row--silver">
+                                <div class="rl-pos">2.</div>
+                                <div class="rl-name">Phantom_X</div>
+                                <div class="rl-score">2980</div>
+                            </div>
+                            <div class="rl-row rl-row--bronze">
+                                <div class="rl-pos">3.</div>
+                                <div class="rl-name">SpikeRush</div>
+                                <div class="rl-score">2845</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">4.</div>
+                                <div class="rl-name">AceHunter</div>
+                                <div class="rl-score">2701</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">5.</div>
+                                <div class="rl-name">RadiantPro</div>
+                                <div class="rl-score">2644</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">6.</div>
+                                <div class="rl-name">FlashPoint</div>
+                                <div class="rl-score">2590</div>
+                            </div>
+                        </div>
+                        <div class="rl-show-all">
+                            <button class="btn btn-primary-custom rl-show-btn">Prikaži sve</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="tab-pane fade" id="pane-lol" role="tabpanel" aria-labelledby="tab-lol">
+                    <div class="rl-card">
+                        <h2 class="rl-card-title"><em>LEAGUE OF LEGENDS RANG LISTA</em></h2>
+                        <div class="rl-table-header">
+                            <span>Pozicija</span>
+                            <span>Igrač</span>
+                            <span>Bodovi</span>
+                        </div>
+                        <div class="rl-rows">
+                            <div class="rl-row rl-row--gold">
+                                <div class="rl-pos">1.</div>
+                                <div class="rl-name">DragonSlayer</div>
+                                <div class="rl-score">2890</div>
+                            </div>
+                            <div class="rl-row rl-row--silver">
+                                <div class="rl-pos">2.</div>
+                                <div class="rl-name">JungleFury</div>
+                                <div class="rl-score">2744</div>
+                            </div>
+                            <div class="rl-row rl-row--bronze">
+                                <div class="rl-pos">3.</div>
+                                <div class="rl-name">LanePusher</div>
+                                <div class="rl-score">2698</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">4.</div>
+                                <div class="rl-name">GankMaster</div>
+                                <div class="rl-score">2512</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">5.</div>
+                                <div class="rl-name">BaronNashor</div>
+                                <div class="rl-score">2445</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">6.</div>
+                                <div class="rl-name">PentaKiller</div>
+                                <div class="rl-score">2380</div>
+                            </div>
+                        </div>
+                        <div class="rl-show-all">
+                            <button class="btn btn-primary-custom rl-show-btn">Prikaži sve</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="tab-pane fade" id="pane-fort" role="tabpanel" aria-labelledby="tab-fort">
+                    <div class="rl-card">
+                        <h2 class="rl-card-title"><em>FORTNITE RANG LISTA</em></h2>
+                        <div class="rl-table-header">
+                            <span>Pozicija</span>
+                            <span>Igrač</span>
+                            <span>Bodovi</span>
+                        </div>
+                        <div class="rl-rows">
+                            <div class="rl-row rl-row--gold">
+                                <div class="rl-pos">1.</div>
+                                <div class="rl-name">BuildKing</div>
+                                <div class="rl-score">3450</div>
+                            </div>
+                            <div class="rl-row rl-row--silver">
+                                <div class="rl-pos">2.</div>
+                                <div class="rl-name">StormRider</div>
+                                <div class="rl-score">3210</div>
+                            </div>
+                            <div class="rl-row rl-row--bronze">
+                                <div class="rl-pos">3.</div>
+                                <div class="rl-name">VictoryRoy</div>
+                                <div class="rl-score">3080</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">4.</div>
+                                <div class="rl-name">MatsPiljer</div>
+                                <div class="rl-score">2956</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">5.</div>
+                                <div class="rl-name">ElimPro</div>
+                                <div class="rl-score">2890</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">6.</div>
+                                <div class="rl-name">ZeroHP</div>
+                                <div class="rl-score">2734</div>
+                            </div>
+                        </div>
+                        <div class="rl-show-all">
+                            <button class="btn btn-primary-custom rl-show-btn">Prikaži sve</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="tab-pane fade" id="pane-rl" role="tabpanel" aria-labelledby="tab-rl">
+                    <div class="rl-card">
+                        <h2 class="rl-card-title"><em>ROCKET LEAGUE RANG LISTA</em></h2>
+                        <div class="rl-table-header">
+                            <span>Pozicija</span>
+                            <span>Igrač</span>
+                            <span>Bodovi</span>
+                        </div>
+                        <div class="rl-rows">
+                            <div class="rl-row rl-row--gold">
+                                <div class="rl-pos">1.</div>
+                                <div class="rl-name">AerialAce</div>
+                                <div class="rl-score">2780</div>
+                            </div>
+                            <div class="rl-row rl-row--silver">
+                                <div class="rl-pos">2.</div>
+                                <div class="rl-name">BoostMaster</div>
+                                <div class="rl-score">2650</div>
+                            </div>
+                            <div class="rl-row rl-row--bronze">
+                                <div class="rl-pos">3.</div>
+                                <div class="rl-name">DemoKing</div>
+                                <div class="rl-score">2544</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">4.</div>
+                                <div class="rl-name">CeilingShot</div>
+                                <div class="rl-score">2490</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">5.</div>
+                                <div class="rl-name">SonicBoom</div>
+                                <div class="rl-score">2380</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">6.</div>
+                                <div class="rl-name">WheelsUp</div>
+                                <div class="rl-score">2290</div>
+                            </div>
+                        </div>
+                        <div class="rl-show-all">
+                            <button class="btn btn-primary-custom rl-show-btn">Prikaži sve</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="tab-pane fade" id="pane-ostalo" role="tabpanel" aria-labelledby="tab-ostalo">
+                    <div class="rl-card">
+                        <h2 class="rl-card-title"><em>OSTALE IGRE RANG LISTA</em></h2>
+                        <div class="rl-table-header">
+                            <span>Pozicija</span>
+                            <span>Igrač</span>
+                            <span>Bodovi</span>
+                        </div>
+                        <div class="rl-rows">
+                            <div class="rl-row rl-row--gold">
+                                <div class="rl-pos">1.</div>
+                                <div class="rl-name">MultiGamer</div>
+                                <div class="rl-score">4200</div>
+                            </div>
+                            <div class="rl-row rl-row--silver">
+                                <div class="rl-pos">2.</div>
+                                <div class="rl-name">AllRounder</div>
+                                <div class="rl-score">3900</div>
+                            </div>
+                            <div class="rl-row rl-row--bronze">
+                                <div class="rl-pos">3.</div>
+                                <div class="rl-name">FlexPlayer</div>
+                                <div class="rl-score">3750</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">4.</div>
+                                <div class="rl-name">GameHopper</div>
+                                <div class="rl-score">3600</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">5.</div>
+                                <div class="rl-name">ProAnything</div>
+                                <div class="rl-score">3450</div>
+                            </div>
+                            <div class="rl-row">
+                                <div class="rl-pos">6.</div>
+                                <div class="rl-name">MasterOfAll</div>
+                                <div class="rl-score">3300</div>
+                            </div>
+                        </div>
+                        <div class="rl-show-all">
+                            <button class="btn btn-primary-custom rl-show-btn">Prikaži sve</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </section>
+    
+
+
+    
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row py-5">
+
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="../index.html" class="footer-brand mb-3">
+                        <img src="../images/logo-BiGr.png" alt="BIGR logo" height="40" class="navbar-logo-img">
+                        <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+                    </a>
+                    <p class="footer-desc">
+                        Moderna eSports i gaming arena stvorena za sve gamere.
+                        Mjesto strasti, zajedništva i pobjede.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-x" aria-label="X" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-twitch" aria-label="Twitch" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitch" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-youtube" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0 offset-lg-1">
+                    <p class="footer-title">LINKOVI</p>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Početna</a></li>
+                        <li><a href="./turniri.html">Turniri</a></li>
+                        <li><a href="./rang-liste.html">Rang liste</a></li>
+                        <li><a href="./cijene.html">Cjenik</a></li>
+                        <li><a href="./oprema.html">Oprema</a></li>
+                        <li><a href="./o-nama.html">O nama</a></li>
+                        <li><a href="./kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <p class="footer-title">INFO</p>
+                    <ul class="footer-links">
+                        <li><a href="./faq.html#pravila">Pravila ponašanja</a></li>
+                        <li><a href="./faq.html#uvjeti">Uvjeti korištenja</a></li>
+                        <li><a href="./faq.html#privatnost">Politika privatnosti</a></li>
+                        <li><a href="./faq.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <p class="footer-title"><a href="./kontakt.html">KONTAKT</a></p>
+                    <ul class="footer-contact">
+                        <li>
+                            <a href="./kontakt.html">
+                                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                                <span>Ulica Gamera 1, 10000 Zagreb, Hrvatska</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./kontakt.html">
+                                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                                <span>+385 12 345 678</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./kontakt.html">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                <span>info@bigr.arena.hr</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./kontakt.html">
+                                <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                                <span>Pon – Ned 09:00 – 24:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; 2026 BIGR Arena. Sva prava pridržana.</p>
+
+        </div>
+    </footer>
+    
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    (function () {
+        var tabMap = {
+            '#lol':    'tab-lol',
+            '#valo':   'tab-valo',
+            '#cs2':    'tab-cs2',
+            '#fort':   'tab-fort',
+            '#rl':     'tab-rl',
+            '#ostalo': 'tab-ostalo'
+        };
+
+        var hash = window.location.hash;
+        if (hash && tabMap[hash]) {
+            var tabEl = document.getElementById(tabMap[hash]);
+            if (tabEl) {
+                bootstrap.Tab.getOrCreateInstance(tabEl).show();
+            }
+        }
+    })();
+    </script>
+</body>
+</html>

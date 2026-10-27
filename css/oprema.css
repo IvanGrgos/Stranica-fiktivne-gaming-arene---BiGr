@@ -1,0 +1,326 @@
+
+.oprema-hero {
+    background-color: var(--bg-primary);
+    overflow: hidden;
+}
+
+.oprema-hero-row {
+    min-height: calc(72vh - var(--navbar-height));
+}
+
+.oprema-hero-text {
+    padding: 3.5rem 2.5rem 3.5rem 0;
+}
+
+.oprema-label {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--accent-green);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.oprema-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.75rem, 5.5vw, 4.5rem);
+    font-weight: 900;
+    font-style: italic;
+    color: var(--text-white);
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+}
+
+.oprema-desc {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.75;
+    max-width: 400px;
+    margin: 0;
+}
+
+.oprema-hero-img-link {
+    display: block;
+    height: 100%;
+}
+
+.oprema-hero-img {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.oprema-section-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--text-white);
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 0;
+}
+
+.oprema-section-title::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background-color: var(--accent-green);
+}
+
+
+.kategorije-section {
+    background-color: var(--bg-primary);
+    padding: 3rem 0 2rem;
+}
+
+.kategorija-box {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    padding: 0.9rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    width: 100%;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.kategorija-box:hover {
+    border-color: var(--accent-green);
+    background-color: rgba(61, 255, 110, 0.04);
+}
+
+.kategorija-icon {
+    font-size: 1.5rem;
+    color: var(--accent-green);
+    flex-shrink: 0;
+}
+
+.kategorija-label {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-white);
+    line-height: 1.2;
+}
+
+
+.nasa-oprema-section {
+    background-color: var(--bg-primary);
+    padding: 2rem 0 4.5rem;
+}
+
+.oprema-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s ease;
+}
+
+.oprema-card:hover {
+    border-color: var(--border-color);
+}
+
+.oprema-card-img-link {
+    display: block;
+}
+
+.oprema-card-img {
+    background-color: var(--bg-secondary);
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border-subtle);
+    transition: opacity 0.2s ease;
+}
+
+.oprema-card-img-link:hover .oprema-card-img {
+    opacity: 0.7;
+}
+
+.oprema-card-icon {
+    font-size: 3.5rem;
+    color: var(--text-muted);
+}
+
+.oprema-card-body {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.oprema-card-label {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent-green);
+    margin-bottom: 0.2rem;
+}
+
+.oprema-card-subtitle {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 0.65rem;
+    line-height: 1.3;
+}
+
+.oprema-card-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 auto;
+}
+
+.oprema-card-specs li {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    padding: 0.18rem 0 0.18rem 1rem;
+    position: relative;
+    line-height: 1.4;
+}
+
+.oprema-card-specs li::before {
+    content: '•';
+    color: var(--accent-green);
+    position: absolute;
+    left: 0;
+    font-size: 0.9rem;
+}
+
+.oprema-card-brands {
+    margin-top: 0.75rem;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.brand-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border: 1px solid var(--border-subtle);
+    border-radius: 3px;
+    padding: 0.15rem 0.45rem;
+}
+
+.brand-nvidia {
+    color: #76b900;
+    border-color: rgba(118, 185, 0, 0.5);
+}
+
+.brand-razer {
+    color: #44d62c;
+    border-color: rgba(68, 214, 44, 0.45);
+}
+
+.brand-samsung {
+    color: #a8bcd4;
+    border-color: rgba(168, 188, 212, 0.4);
+}
+
+.brand-sony {
+    color: #6b9fff;
+    border-color: rgba(107, 159, 255, 0.45);
+}
+
+.brand-microsoft {
+    color: #52b043;
+    border-color: rgba(82, 176, 67, 0.45);
+}
+
+.brand-meta {
+    color: #7b93ff;
+    border-color: rgba(123, 147, 255, 0.45);
+}
+
+
+.oprema-cta-section {
+    background-color: var(--bg-card);
+    padding: 3.5rem 0;
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.oprema-cta-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-decoration: none;
+    transition: gap 0.25s ease;
+}
+
+.oprema-cta-link:hover {
+    gap: 2.25rem;
+}
+
+.oprema-cta-text {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 3vw, 2.25rem);
+    font-weight: 900;
+    color: var(--text-white);
+    letter-spacing: 3px;
+    transition: color 0.2s ease;
+}
+
+.oprema-cta-icon {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    color: var(--accent-green);
+    transition: transform 0.25s ease;
+}
+
+.oprema-cta-link:hover .oprema-cta-text {
+    color: var(--accent-green);
+}
+
+.oprema-cta-link:hover .oprema-cta-icon {
+    transform: translateX(8px);
+}
+
+
+@media (max-width: 991.98px) {
+    .oprema-hero-row {
+        min-height: auto;
+    }
+
+    .oprema-hero-text {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .oprema-desc {
+        max-width: 100%;
+    }
+
+    .oprema-hero-img {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .oprema-hero-text {
+        padding: 2rem 1rem;
+    }
+
+    .kategorija-label {
+        font-size: 0.82rem;
+    }
+}

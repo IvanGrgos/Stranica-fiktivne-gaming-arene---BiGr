@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turniri – BIGR Esports &amp; Gaming Arena</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/global.css">
+    
+    <link rel="stylesheet" href="../css/turniri.css">
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+
+            
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMain"
+                    aria-controls="navbarMain"
+                    aria-expanded="false"
+                    aria-label="Otvori navigaciju">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo-BiGr.png" alt="BIGR logo" height="42" class="navbar-logo-img">
+                <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+            </a>
+
+            
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="turniri.html">Turniri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rang-liste.html">Rang liste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cijene.html">Cjenik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oprema.html">Oprema</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-nama.html">O nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-user">
+                    <a href="login.html" class="user-icon" aria-label="Korisnički račun">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    
+
+
+    
+    <section class="turniri-hero" aria-label="Prijava na turnir">
+        <div class="container">
+
+            
+            <div class="row align-items-center mb-4 g-4">
+                <div class="col-lg-6">
+                    <div class="turniri-hero-title">
+                        <h1>PRIJAVA NA <span class="text-accent">eSPORTS</span><br>TURNIR</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <a href="./galerija.html" aria-label="Pogledaj galeriju arene">
+                        <img src="../images/turnir.png" alt="BIGR turnirska atmosfera" class="turniri-hero-slika">
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-6">
+                    <div class="prijava-form-wrapper">
+
+                        
+                        <ul class="nav nav-tabs prijava-tabs mb-4" id="prijavaTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="tab-solo" data-bs-toggle="tab" data-bs-target="#formSolo" type="button" role="tab">
+                                    <i class="bi bi-person me-2"></i>SOLO IGRAČ
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tab-tim" data-bs-toggle="tab" data-bs-target="#formTim" type="button" role="tab">
+                                    <i class="bi bi-people me-2"></i>TIM
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+
+                            
+                            <div class="tab-pane fade show active" id="formSolo" role="tabpanel">
+                                <h2 class="form-section-title">PODACI O IGRAČU</h2>
+                                <form novalidate>
+                                    <div class="mb-3">
+                                        <label for="soloTurnir" class="form-label-custom">Turnir</label>
+                                        <select class="form-select form-control-custom" id="soloTurnir">
+                                            <option value="" disabled selected>Odaberite turnir</option>
+                                            <option value="cs2-12">CS2 Turnir #12</option>
+                                            <option value="valorant-8">Valorant Cup #8</option>
+                                            <option value="lol-5">LoL Arena #5</option>
+                                            <option value="fortnite-3">Fortnite Open #3</option>
+                                            <option value="fifa-6">FIFA League #6</option>
+                                            <option value="rl-4">Rocket League Cup #4</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="soloNadimak" class="form-label-custom">Nadimak (in-game)</label>
+                                        <input type="text" class="form-control form-control-custom" id="soloNadimak" placeholder="Unesi svoj nadimak">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="soloEmail" class="form-label-custom">Email</label>
+                                        <input type="email" class="form-control form-control-custom" id="soloEmail" placeholder="Unesi email adresu">
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-prijava">PRIJAVA</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            
+                            <div class="tab-pane fade" id="formTim" role="tabpanel">
+                                <h2 class="form-section-title">PODACI O TIMU</h2>
+                                <form novalidate>
+                                    <div class="mb-3">
+                                        <label for="timTurnir" class="form-label-custom">Turnir</label>
+                                        <select class="form-select form-control-custom" id="timTurnir">
+                                            <option value="" disabled selected>Odaberite turnir</option>
+                                            <option value="cs2-12">CS2 Turnir #12</option>
+                                            <option value="valorant-8">Valorant Cup #8</option>
+                                            <option value="lol-5">LoL Arena #5</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="timNaziv" class="form-label-custom">Naziv tima</label>
+                                        <input type="text" class="form-control form-control-custom" id="timNaziv" placeholder="Unesi naziv tima">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="timKapetan" class="form-label-custom">Email kapetana</label>
+                                        <input type="email" class="form-control form-control-custom" id="timKapetan" placeholder="Unesi email adresu kapetana">
+                                    </div>
+                                    <p class="form-section-title mt-4">IGRAČI (5 / 5)</p>
+                                    <div class="mb-2">
+                                        <label for="timIgrac1" class="form-label-custom">Igrač 1 — Kapetan (in-game nadimak)</label>
+                                        <input type="text" class="form-control form-control-custom" id="timIgrac1" placeholder="Npr. s1mple_hr">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="timIgrac2" class="form-label-custom">Igrač 2 — nadimak</label>
+                                        <input type="text" class="form-control form-control-custom" id="timIgrac2" placeholder="In-game nadimak">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="timIgrac3" class="form-label-custom">Igrač 3 — nadimak</label>
+                                        <input type="text" class="form-control form-control-custom" id="timIgrac3" placeholder="In-game nadimak">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="timIgrac4" class="form-label-custom">Igrač 4 — nadimak</label>
+                                        <input type="text" class="form-control form-control-custom" id="timIgrac4" placeholder="In-game nadimak">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="timIgrac5" class="form-label-custom">Igrač 5 — nadimak</label>
+                                        <input type="text" class="form-control form-control-custom" id="timIgrac5" placeholder="In-game nadimak">
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-prijava">PRIJAVA TIMA</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="turnir-detalji-card">
+                        <p class="detalji-card-label">NADOLAZEĆI TURNIR</p>
+                        <h3 class="detalji-card-naziv">CS2 Turnir #12</h3>
+                        <div class="detalji-card-meta">
+                            <span><i class="bi bi-calendar3"></i> 15. lipnja 2026.</span>
+                            <span><i class="bi bi-people"></i> 16 timova</span>
+                            <span><i class="bi bi-trophy"></i> Nagradni fond: 500€</span>
+                        </div>
+                        <a href="./detalji.html" class="btn btn-outline-custom mt-3">
+                            <i class="bi bi-arrow-right me-2"></i>Pogledaj detalje
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+    <section class="stablo-section" aria-label="Turnir stablo">
+        <div class="container-fluid px-4">
+
+            <div class="stablo-header d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                <div>
+                    <h2 class="stablo-title">TURNIR <span class="text-accent">STABLO</span> — <a href="./detalji.html" class="stablo-detalji-link">CS2 Turnir #12 DETALJI</a></h2>
+                    <p class="stablo-subtitle">Prati kako turnir napreduje uživo</p>
+                </div>
+                <div>
+                    <select class="form-select stablo-select" aria-label="Odaberi turnir">
+                        <option selected>CS2 Turnir #12</option>
+                        <option>Valorant Cup #8</option>
+                        <option>LoL Arena #5</option>
+                        <option>Fortnite Open #3</option>
+                    </select>
+                </div>
+            </div>
+
+            
+            <div class="bracket-rounds-header">
+                <div class="round-label round-label--active">OSMINA FINALA</div>
+                <div class="round-label">ČETVRTFINALA</div>
+                <div class="round-label">POLUFINALA</div>
+                <div class="round-label">FINALE</div>
+            </div>
+
+            
+            <div class="bracket-wrapper">
+
+                
+                <div class="bracket-round round-of-16">
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <span class="team-seed">1</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=TA&backgroundColor=3dff6e&fontColor=000000" alt="Team Alpha" class="team-avatar">
+                            <span class="team-name">Team Alpha</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <span class="team-seed">2</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=NU&backgroundColor=1a2035&fontColor=b0bcd4" alt="Noobs United" class="team-avatar">
+                            <span class="team-name">Noobs United</span>
+                            <span class="team-score">8</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <span class="team-seed">3</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=RD&backgroundColor=3dff6e&fontColor=000000" alt="Red Dragons" class="team-avatar">
+                            <span class="team-name">Red Dragons</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <span class="team-seed">4</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=J4F&backgroundColor=1a2035&fontColor=b0bcd4" alt="Just4Fun" class="team-avatar">
+                            <span class="team-name">Just4Fun</span>
+                            <span class="team-score">4</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <span class="team-seed">5</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=AL&backgroundColor=3dff6e&fontColor=000000" alt="Aim Legends" class="team-avatar">
+                            <span class="team-name">Aim Legends</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <span class="team-seed">6</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=BC&backgroundColor=1a2035&fontColor=b0bcd4" alt="Bad Company" class="team-avatar">
+                            <span class="team-name">Bad Company</span>
+                            <span class="team-score">7</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <span class="team-seed">7</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=CS&backgroundColor=3dff6e&fontColor=000000" alt="Cyber Sharks" class="team-avatar">
+                            <span class="team-name">Cyber Sharks</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <span class="team-seed">8</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=EO&backgroundColor=1a2035&fontColor=b0bcd4" alt="Easy Over" class="team-avatar">
+                            <span class="team-name">Easy Over</span>
+                            <span class="team-score">5</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <span class="team-seed">9</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=HH&backgroundColor=3dff6e&fontColor=000000" alt="Head Hunters" class="team-avatar">
+                            <span class="team-name">Head Hunters</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <span class="team-seed">10</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=PAB&backgroundColor=1a2035&fontColor=b0bcd4" alt="Peek A Boo" class="team-avatar">
+                            <span class="team-name">Peek A Boo</span>
+                            <span class="team-score">3</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <span class="team-seed">11</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=BP&backgroundColor=3dff6e&fontColor=000000" alt="Bulletproof" class="team-avatar">
+                            <span class="team-name">Bulletproof</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <span class="team-seed">14</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=FH&backgroundColor=1a2035&fontColor=b0bcd4" alt="Frag Hunters" class="team-avatar">
+                            <span class="team-name">Frag Hunters</span>
+                            <span class="team-score">9</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <span class="team-seed">15</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=RB&backgroundColor=3dff6e&fontColor=000000" alt="Rush B" class="team-avatar">
+                            <span class="team-name">Rush B</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <span class="team-seed">16</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=WD&backgroundColor=1a2035&fontColor=b0bcd4" alt="Wolves Den" class="team-avatar">
+                            <span class="team-name">Wolves Den</span>
+                            <span class="team-score">10</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <span class="team-seed">12</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=GO&backgroundColor=3dff6e&fontColor=000000" alt="Game Over" class="team-avatar">
+                            <span class="team-name">Game Over</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <span class="team-seed">13</span>
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=NK&backgroundColor=1a2035&fontColor=b0bcd4" alt="No Kill" class="team-avatar">
+                            <span class="team-name">No Kill</span>
+                            <span class="team-score">6</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="bracket-round quarterfinals">
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=TA&backgroundColor=3dff6e&fontColor=000000" alt="Team Alpha" class="team-avatar">
+                            <span class="team-name">Team Alpha</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=RD&backgroundColor=1a2035&fontColor=b0bcd4" alt="Red Dragons" class="team-avatar">
+                            <span class="team-name">Red Dragons</span>
+                            <span class="team-score">9</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=AL&backgroundColor=3dff6e&fontColor=000000" alt="Aim Legends" class="team-avatar">
+                            <span class="team-name">Aim Legends</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=CS&backgroundColor=1a2035&fontColor=b0bcd4" alt="Cyber Sharks" class="team-avatar">
+                            <span class="team-name">Cyber Sharks</span>
+                            <span class="team-score">14</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=GO&backgroundColor=3dff6e&fontColor=000000" alt="Game Over" class="team-avatar">
+                            <span class="team-name">Game Over</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=HH&backgroundColor=1a2035&fontColor=b0bcd4" alt="Head Hunters" class="team-avatar">
+                            <span class="team-name">Head Hunters</span>
+                            <span class="team-score">8</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=BP&backgroundColor=3dff6e&fontColor=000000" alt="Bulletproof" class="team-avatar">
+                            <span class="team-name">Bulletproof</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=RB&backgroundColor=1a2035&fontColor=b0bcd4" alt="Rush B" class="team-avatar">
+                            <span class="team-name">Rush B</span>
+                            <span class="team-score">11</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="bracket-round semifinals">
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=TA&backgroundColor=3dff6e&fontColor=000000" alt="Team Alpha" class="team-avatar">
+                            <span class="team-name">Team Alpha</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=AL&backgroundColor=1a2035&fontColor=b0bcd4" alt="Aim Legends" class="team-avatar">
+                            <span class="team-name">Aim Legends</span>
+                            <span class="team-score">10</span>
+                        </div>
+                    </div>
+                    <div class="bracket-match">
+                        <div class="bracket-team winner">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=GO&backgroundColor=3dff6e&fontColor=000000" alt="Game Over" class="team-avatar">
+                            <span class="team-name">Game Over</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=BP&backgroundColor=1a2035&fontColor=b0bcd4" alt="Bulletproof" class="team-avatar">
+                            <span class="team-name">Bulletproof</span>
+                            <span class="team-score">12</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="bracket-round finale">
+                    <div class="bracket-match finale-match">
+                        <div class="bracket-team winner finale-winner">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=TA&backgroundColor=3dff6e&fontColor=000000" alt="Team Alpha" class="team-avatar">
+                            <span class="team-name">Team Alpha</span>
+                            <span class="team-score winner-score">16</span>
+                        </div>
+                        <div class="bracket-team">
+                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=GO&backgroundColor=1a2035&fontColor=b0bcd4" alt="Game Over" class="team-avatar">
+                            <span class="team-name">Game Over</span>
+                            <span class="team-score">13</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pobjednik-box">
+                        <div class="pobjednik-label">POBJEDNIK</div>
+                        <i class="bi bi-trophy-fill pobjednik-trophy"></i>
+                        <div class="pobjednik-name">Team Alpha</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+
+
+    
+    <section class="info-strip" aria-label="Prednosti">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="info-item">
+                        <i class="bi bi-calendar2-check info-icon"></i>
+                        <div>
+                            <div class="info-title">Brza prijava</div>
+                            <div class="info-desc">Jednostavan proces prijave na turnir</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="info-item">
+                        <i class="bi bi-shield-check info-icon"></i>
+                        <div>
+                            <div class="info-title">Fair play</div>
+                            <div class="info-desc">Poštujemo pravila i promičemo fair play</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="info-item">
+                        <i class="bi bi-trophy info-icon"></i>
+                        <div>
+                            <div class="info-title">Nagrade</div>
+                            <div class="info-desc">Osvoji vrijedne nagrade i pokaži svoje vještine</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="info-item">
+                        <i class="bi bi-broadcast info-icon"></i>
+                        <div>
+                            <div class="info-title">Live praćenje</div>
+                            <div class="info-desc">Prati turnir uživo i navijaj za favorite</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row py-5">
+
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="../index.html" class="footer-brand mb-3">
+                        <img src="../images/logo-BiGr.png" alt="BIGR logo" height="40" class="navbar-logo-img">
+                        <span class="brand-text">B<span class="brand-accent">I</span>GR</span>
+                    </a>
+                    <p class="footer-desc">
+                        Moderna eSports i gaming arena stvorena za sve gamere.
+                        Mjesto strasti, zajedništva i pobjede.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-x" aria-label="X" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-twitch" aria-label="Twitch" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitch" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-youtube" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0 offset-lg-1">
+                    <p class="footer-title">LINKOVI</p>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Početna</a></li>
+                        <li><a href="turniri.html">Turniri</a></li>
+                        <li><a href="rang-liste.html">Rang liste</a></li>
+                        <li><a href="cijene.html">Cjenik</a></li>
+                        <li><a href="oprema.html">Oprema</a></li>
+                        <li><a href="o-nama.html">O nama</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <p class="footer-title">INFO</p>
+                    <ul class="footer-links">
+                        <li><a href="faq.html#pravila">Pravila ponašanja</a></li>
+                        <li><a href="faq.html#uvjeti">Uvjeti korištenja</a></li>
+                        <li><a href="faq.html#privatnost">Politika privatnosti</a></li>
+                        <li><a href="faq.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <p class="footer-title"><a href="kontakt.html">KONTAKT</a></p>
+                    <ul class="footer-contact">
+                        <li>
+                            <a href="kontakt.html">
+                                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                                <span>Ulica Gamera 1, 10000 Zagreb, Hrvatska</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html">
+                                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                                <span>+385 12 345 678</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                <span>info@bigr.arena.hr</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html">
+                                <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                                <span>Pon – Ned 09:00 – 24:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; 2026 BIGR Arena. Sva prava pridržana.</p>
+
+        </div>
+    </footer>
+    
+
+
+
+
+    <div class="modal fade" id="modalTim" tabindex="-1" role="dialog" aria-labelledby="modalTimLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content tim-modal-content">
+                <div class="modal-header tim-modal-header">
+                    <h3 class="modal-title tim-modal-title" id="modalTimLabel">
+                        <i class="bi bi-shield-fill me-2 text-accent" aria-hidden="true"></i>
+                        <span id="modalTimNaziv">Sastav tima</span>
+                    </h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+                </div>
+                <div class="modal-body tim-modal-body" id="modalTimBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    (function () {
+        var TIMOVI = {
+            'Team Alpha': [
+                {nick: 's1mple_hr',    uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'AWP_god99',    uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'IGL_master',   uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'lurker_x',     uloga: 'Lurker',          ikona: 'bi-shield-check'},
+                {nick: 'support_pro',  uloga: 'Support',         ikona: 'bi-lightning-charge'}
+            ],
+            'Noobs United': [
+                {nick: 'n00bKiller99', uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'GravitySnpr',  uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'CasualPro',    uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'RandomGuy42',  uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'WallHawk',     uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Red Dragons': [
+                {nick: 'DragonSlayer', uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'RedFlame_hr',  uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'FireBreath',   uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'AshBlaze',     uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'ScaleKnight',  uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Just4Fun': [
+                {nick: 'FunMaster',    uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'HaHaAWP',      uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'PlayfulPro',   uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'JokeShot',     uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'LaughLurk',    uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Aim Legends': [
+                {nick: 'PerfectAim',   uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'HeadshotKing', uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'TriggerMstr',  uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'ClutchGod',    uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'SilentKill',   uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Bad Company': [
+                {nick: 'ChaosAgent',   uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'ToxicShot',    uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'RecklessIGL',  uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'RiotSupport',  uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'BadLurker',    uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Cyber Sharks': [
+                {nick: 'CyberFang',    uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'DigitalByte',  uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'NetHunter',    uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'CodeBreaker',  uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'DataLurk',     uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Easy Over': [
+                {nick: 'EasyKill',     uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'NoContest',    uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'OverPower',    uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'CakeWalk',     uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'SimpleWin',    uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Head Hunters': [
+                {nick: 'HeadTaker',    uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'SkullCrush',   uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'BrainSniper',  uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'MindKiller',   uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'ThinkFast',    uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Peek A Boo': [
+                {nick: 'ShadowPeek',   uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'CornerKing',   uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'FlashPop',     uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'AngleHold',    uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'WallBounce',   uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Bulletproof': [
+                {nick: 'ArmorKing',    uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'TankAWP',      uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'ShieldBoss',   uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'IronWall',     uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'SteelLurk',    uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Frag Hunters': [
+                {nick: 'FragSeeker',   uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'KillChaser',   uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'HuntMaster',   uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'TrailBlaze',   uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'ScentKill',    uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Rush B': [
+                {nick: 'B_Rusher',     uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'SmokeFrag',    uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'FlashBang_IGL',uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'MollyThrow',   uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'CT_Lurker',    uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Wolves Den': [
+                {nick: 'AlphaWolf',    uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'HowlSniper',   uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'PackLeader',   uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'WolfSupport',  uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'NightLurker',  uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'Game Over': [
+                {nick: 'GG_Fragger',   uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'LastShot_AWP', uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'EndGame_IGL',  uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'FinalSupport', uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'GameEnder',    uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ],
+            'No Kill': [
+                {nick: 'PeaceKeeper',  uloga: 'Entry Fragger',   ikona: 'bi-crosshair2'},
+                {nick: 'SafeShot',     uloga: 'AWPer',           ikona: 'bi-eye'},
+                {nick: 'PassiveIGL',   uloga: 'In-Game Leader',  ikona: 'bi-cpu'},
+                {nick: 'DefendOnly',   uloga: 'Support',         ikona: 'bi-lightning-charge'},
+                {nick: 'StealthMode',  uloga: 'Lurker',          ikona: 'bi-shield-check'}
+            ]
+        };
+
+        var modal = document.getElementById('modalTim');
+
+        document.querySelectorAll('.bracket-team').forEach(function (el) {
+            el.addEventListener('click', function () {
+                var nameEl = el.querySelector('.team-name');
+                if (!nameEl) return;
+                var name = nameEl.textContent.trim();
+                if (!TIMOVI[name]) return;
+
+                document.getElementById('modalTimNaziv').textContent = name;
+                document.getElementById('modalTimBody').innerHTML = TIMOVI[name].map(function (p) {
+                    return '<div class="tim-igrac">' +
+                        '<i class="bi ' + p.ikona + ' tim-igrac-ikona" aria-hidden="true"></i>' +
+                        '<span class="tim-igrac-nick">' + p.nick + '</span>' +
+                        '<span class="tim-igrac-rola">' + p.uloga + '</span>' +
+                        '</div>';
+                }).join('');
+
+                bootstrap.Modal.getOrCreateInstance(modal).show();
+            });
+        });
+    })();
+    </script>
+</body>
+</html>
